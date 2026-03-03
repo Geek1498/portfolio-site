@@ -1,0 +1,137 @@
+---
+interface Props {
+	active?: string;
+}
+
+const { active = '' } = Astro.props;
+
+const links = [
+	{ label: 'HOME', href: '/' },
+	{ label: 'PROJECTS', href: '/projects' },
+	{ label: 'SERVICES', href: '/services' },
+	{ label: 'ABOUT', href: '/about' },
+	{ label: 'BLOG', href: '/blog' },
+	{ label: 'CONTACT', href: '/contact' },
+];
+---
+
+<nav class="navbar">
+	<a href="/" class="logo">PORTFOLIO</a>
+
+	<button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+		<span class="bar"></span>
+		<span class="bar"></span>
+	</button>
+
+	<ul class="nav-links">
+		{links.map((link) => (
+			<li>
+				<a
+					href={link.href}
+					class:list={['nav-link', { active: active === link.label }]}
+				>
+					{link.label}
+				</a>
+			</li>
+		))}
+	</ul>
+</nav>
+<div class="divider"></div>
+
+<script>
+	const toggle = document.querySelector('.mobile-toggle');
+	const navLinks = document.querySelector('.nav-links');
+
+	toggle?.addEventListener('click', () => {
+		const expanded = toggle.getAttribute('aria-expanded') === 'true';
+		toggle.setAttribute('aria-expanded', String(!expanded));
+		navLinks?.classList.toggle('open');
+	});
+</script>
+
+<style>
+	.navbar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 16px var(--page-padding);
+		height: 48px;
+	}
+
+	.logo {
+		font-family: var(--font-mono);
+		font-size: 14px;
+		font-weight: 200;
+		letter-spacing: 2px;
+		color: var(--color-text);
+		text-decoration: none;
+	}
+
+	.nav-links {
+		display: flex;
+		list-style: none;
+		gap: 32px;
+		align-items: center;
+	}
+
+	.nav-link {
+		font-family: var(--font-sans);
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		color: var(--color-secondary);
+		text-decoration: none;
+		transition: color 0.2s;
+	}
+
+	.nav-link:hover {
+		color: var(--color-text);
+	}
+
+	.nav-link.active {
+		color: var(--color-text);
+		font-weight: 700;
+	}
+
+	.mobile-toggle {
+		display: none;
+		flex-direction: column;
+		gap: 5px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 4px;
+	}
+
+	.bar {
+		display: block;
+		width: 20px;
+		height: 1.5px;
+		background: var(--color-text);
+		transition: transform 0.3s;
+	}
+
+	@media (max-width: 768px) {
+		.mobile-toggle {
+			display: flex;
+		}
+
+		.nav-links {
+			display: none;
+			position: absolute;
+			top: 48px;
+			left: 0;
+			right: 0;
+			flex-direction: column;
+			background: var(--color-bg);
+			padding: 24px var(--page-padding);
+			gap: 16px;
+			z-index: 100;
+			border-bottom: 1px solid var(--color-divider);
+		}
+
+		.nav-links.open {
+			display: flex;
+		}
+	}
+</style>

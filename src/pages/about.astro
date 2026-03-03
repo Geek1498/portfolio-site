@@ -1,0 +1,219 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const focusAreas = [
+	{
+		title: 'Business Automation',
+		description: 'Building systems that eliminate manual processes and streamline operations across retail, ERP, and customer engagement.',
+		color: 'var(--color-caramel)',
+	},
+	{
+		title: 'AI-Assisted Workflows',
+		description: 'Integrating machine learning and NLP into practical business tools — from trading analytics to intelligent chatbots.',
+		color: 'var(--color-taupe)',
+	},
+	{
+		title: 'API-First Architecture',
+		description: 'Designing scalable, well-documented API layers that connect disparate systems and enable real-time data flow.',
+		color: 'var(--color-sienna)',
+	},
+];
+
+const philosophy = [
+	{ title: 'Clean Architecture', description: 'Separation of concerns, clear boundaries, testable systems.' },
+	{ title: 'Minimalism', description: 'Every line of code should earn its place. No over-engineering.' },
+	{ title: 'Build Fast, Iterate', description: 'Ship working software quickly. Refine based on real feedback.' },
+	{ title: 'Practical > Theory', description: 'Solutions that work in production, not just in textbooks.' },
+];
+---
+
+<Layout title="About — Portfolio" activeNav="ABOUT">
+	<!-- Hero -->
+	<section class="hero section-padding">
+		<div class="hero-content">
+			<span class="micro-label">ABOUT</span>
+			<h1 class="headline headline--page">
+				Systems-Focused<br />Developer
+			</h1>
+			<p class="body-text">
+				A full-stack developer building automation tools and data-driven
+				applications. I focus on the intersection of business logic and
+				technology — creating systems that actually move operations forward.
+			</p>
+		</div>
+		<div class="hero-photo">
+			<span class="photo-placeholder">PHOTO</span>
+		</div>
+	</section>
+
+	<div class="divider"></div>
+
+	<!-- Focus Areas -->
+	<section class="focus section-padding">
+		<span class="micro-label">WHAT I FOCUS ON</span>
+		<div class="focus-grid">
+			{focusAreas.map((area) => (
+				<div class="focus-card" style={`background: ${area.color}`}>
+					<h3 class="headline headline--card focus-card__title">{area.title}</h3>
+					<p class="focus-card__desc">{area.description}</p>
+				</div>
+			))}
+		</div>
+	</section>
+
+	<div class="divider"></div>
+
+	<!-- Philosophy -->
+	<section class="philosophy section-padding">
+		<span class="micro-label">DEVELOPMENT PHILOSOPHY</span>
+		<div class="philosophy-grid">
+			{philosophy.map((item) => (
+				<div class="philosophy-col">
+					<h3 class="philosophy-title">{item.title}</h3>
+					<p class="philosophy-desc">{item.description}</p>
+				</div>
+			))}
+		</div>
+	</section>
+</Layout>
+
+<style>
+	/* ── Hero ── */
+	.hero {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 64px;
+		align-items: center;
+	}
+
+	.hero-content {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.hero-photo {
+		background: var(--color-surface);
+		aspect-ratio: 3 / 4;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-height: 500px;
+	}
+
+	.photo-placeholder {
+		font-family: var(--font-mono);
+		font-size: 14px;
+		font-weight: 200;
+		letter-spacing: 3px;
+		color: var(--color-tertiary);
+	}
+
+	/* ── Focus Areas ── */
+	.focus {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.focus-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0;
+	}
+
+	.focus-card {
+		padding: 40px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.focus-card__title {
+		color: #fff;
+	}
+
+	.focus-card__desc {
+		font-size: 13px;
+		color: rgba(255, 255, 255, 0.8);
+		line-height: 1.6;
+	}
+
+	/* ── Philosophy ── */
+	.philosophy {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.philosophy-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 0;
+	}
+
+	.philosophy-col {
+		padding: 32px;
+		border-right: 1px solid var(--color-divider);
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.philosophy-col:last-child {
+		border-right: none;
+	}
+
+	.philosophy-title {
+		font-family: var(--font-mono);
+		font-size: 16px;
+		font-weight: 200;
+		color: var(--color-text);
+	}
+
+	.philosophy-desc {
+		font-size: 13px;
+		color: var(--color-secondary);
+		line-height: 1.5;
+	}
+
+	/* ── Responsive ── */
+	@media (max-width: 1024px) {
+		.philosophy-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.philosophy-col:nth-child(2) {
+			border-right: none;
+		}
+
+		.philosophy-col:nth-child(3),
+		.philosophy-col:nth-child(4) {
+			border-top: 1px solid var(--color-divider);
+		}
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			grid-template-columns: 1fr;
+			gap: 40px;
+		}
+
+		.focus-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.philosophy-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.philosophy-col {
+			border-right: none;
+			border-bottom: 1px solid var(--color-divider);
+		}
+
+		.philosophy-col:last-child {
+			border-bottom: none;
+		}
+	}
+</style>

@@ -1,0 +1,211 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact — Portfolio" activeNav="CONTACT">
+	<section class="contact section-padding">
+		<div class="contact-grid">
+			<!-- Left: Info -->
+			<div class="contact-info">
+				<span class="micro-label">CONTACT</span>
+				<h1 class="headline headline--page">
+					Let's Build<br />Something<br />Together
+				</h1>
+				<p class="body-text">
+					Have a project in mind? I work with businesses and teams to build custom
+					systems, automate operations, and integrate complex platforms. Fill out the
+					form and I'll get back to you within 24 hours.
+				</p>
+
+				<div class="contact-links">
+					<div class="contact-link-item">
+						<span class="contact-link-label">GITHUB</span>
+						<a href="https://github.com" target="_blank" rel="noopener noreferrer" class="cta-link">VIEW PROFILE ↗</a>
+					</div>
+					<div class="contact-link-item">
+						<span class="contact-link-label">LINKEDIN</span>
+						<a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="cta-link">CONNECT ↗</a>
+					</div>
+					<div class="contact-link-item">
+						<span class="contact-link-label">EMAIL</span>
+						<a href="mailto:hello@example.com" class="cta-link">SEND EMAIL ↗</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Right: Form -->
+			<div class="contact-form-wrapper">
+				<form class="contact-form" action="#" method="POST">
+					<div class="form-row">
+						<div class="form-group">
+							<label for="name" class="form-label">NAME</label>
+							<input type="text" id="name" name="name" class="form-input" required />
+						</div>
+						<div class="form-group">
+							<label for="email" class="form-label">EMAIL</label>
+							<input type="email" id="email" name="email" class="form-input" required />
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group">
+							<label for="company" class="form-label">COMPANY (OPTIONAL)</label>
+							<input type="text" id="company" name="company" class="form-input" />
+						</div>
+						<div class="form-group">
+							<label for="project-type" class="form-label">PROJECT TYPE</label>
+							<select id="project-type" name="project-type" class="form-input" required>
+								<option value="" disabled selected>Select a type</option>
+								<option value="backend">Backend Development</option>
+								<option value="dashboard">Dashboard Development</option>
+								<option value="erp">ERP Integration</option>
+								<option value="ai">AI-Powered Tools</option>
+								<option value="automation">Business Automation</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="budget" class="form-label">BUDGET RANGE</label>
+						<select id="budget" name="budget" class="form-input" required>
+							<option value="" disabled selected>Select a range</option>
+							<option value="5k-10k">$5,000 — $10,000</option>
+							<option value="10k-25k">$10,000 — $25,000</option>
+							<option value="25k-50k">$25,000 — $50,000</option>
+							<option value="50k+">$50,000+</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="message" class="form-label">MESSAGE</label>
+						<textarea id="message" name="message" class="form-input form-textarea" rows="5" required></textarea>
+					</div>
+
+					<button type="submit" class="submit-btn">
+						SEND INQUIRY ↗
+					</button>
+				</form>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	/* ── Layout ── */
+	.contact-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 80px;
+		align-items: start;
+	}
+
+	/* ── Info side ── */
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.contact-links {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		margin-top: 16px;
+		padding-top: 24px;
+		border-top: 1px solid var(--color-divider);
+	}
+
+	.contact-link-item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.contact-link-label {
+		font-family: var(--font-sans);
+		font-size: 10px;
+		font-weight: 500;
+		letter-spacing: 2px;
+		color: var(--color-tertiary);
+	}
+
+	/* ── Form ── */
+	.contact-form {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.form-row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 24px;
+	}
+
+	.form-group {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.form-label {
+		font-family: var(--font-sans);
+		font-size: 10px;
+		font-weight: 500;
+		letter-spacing: 2px;
+		color: var(--color-tertiary);
+	}
+
+	.form-input {
+		font-family: var(--font-sans);
+		font-size: 14px;
+		padding: 12px 16px;
+		border: 1px solid var(--color-divider);
+		background: #fff;
+		color: var(--color-text);
+		outline: none;
+		transition: border-color 0.2s;
+		-webkit-appearance: none;
+		border-radius: 0;
+	}
+
+	.form-input:focus {
+		border-color: var(--color-text);
+	}
+
+	.form-textarea {
+		resize: vertical;
+		min-height: 120px;
+	}
+
+	.submit-btn {
+		font-family: var(--font-sans);
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		padding: 16px 32px;
+		background: var(--color-text);
+		color: #fff;
+		border: none;
+		cursor: pointer;
+		transition: opacity 0.2s;
+		align-self: flex-start;
+	}
+
+	.submit-btn:hover {
+		opacity: 0.85;
+	}
+
+	/* ── Responsive ── */
+	@media (max-width: 768px) {
+		.contact-grid {
+			grid-template-columns: 1fr;
+			gap: 48px;
+		}
+
+		.form-row {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

@@ -1,0 +1,183 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const services = [
+	{
+		number: '01',
+		title: 'Custom Laravel Backend Development',
+		audience: 'Startups & businesses needing scalable APIs',
+		problem: 'Fragmented backends that can\'t keep up with growing data and user demands.',
+		deliverable: 'Production-ready Laravel backend with REST APIs, authentication, and database architecture.',
+		color: 'var(--color-caramel)',
+	},
+	{
+		number: '02',
+		title: 'Next.js Dashboard Development',
+		audience: 'Teams needing data visualization and control panels',
+		problem: 'No clear visibility into business data or operational metrics.',
+		deliverable: 'High-performance Next.js dashboard with real-time data, charts, and role-based access.',
+		color: 'var(--color-taupe)',
+	},
+	{
+		number: '03',
+		title: 'ERP Integration (SAP B1)',
+		audience: 'Companies running SAP Business One',
+		problem: 'Disconnected systems creating data silos and manual reconciliation work.',
+		deliverable: 'Custom middleware and monitoring tools connecting SAP B1 to your existing stack.',
+		color: 'var(--color-sienna)',
+	},
+	{
+		number: '04',
+		title: 'AI-Powered Internal Tools',
+		audience: 'Businesses looking to leverage AI for operations',
+		problem: 'Manual processes that could be automated with intelligent systems.',
+		deliverable: 'Chatbots, automation systems, and analytics engines powered by OpenAI and custom ML.',
+		color: 'var(--color-caramel)',
+	},
+	{
+		number: '05',
+		title: 'Trading Analytics Tools',
+		audience: 'Traders and financial firms',
+		problem: 'Lack of systematic data capture and performance analysis in trading workflows.',
+		deliverable: 'Custom dashboards, journaling systems, and performance tracking tools.',
+		color: 'var(--color-taupe)',
+	},
+];
+---
+
+<Layout title="Services — Portfolio" activeNav="SERVICES">
+	<!-- Hero -->
+	<section class="hero section-padding">
+		<span class="micro-label">SERVICES</span>
+		<h1 class="headline headline--page">
+			What I<br />Can Build<br />For You
+		</h1>
+		<p class="body-text">
+			End-to-end development services focused on business systems,
+			automation, and data-driven applications.
+		</p>
+	</section>
+
+	<div class="divider"></div>
+
+	<!-- Services Grid -->
+	<section class="services section-padding">
+		<div class="services-grid">
+			{services.map((service) => (
+				<div class="service-card" style={`background: ${service.color}`}>
+					<span class="service-number">{service.number}</span>
+					<div class="service-content">
+						<h3 class="headline headline--card service-title">{service.title}</h3>
+						<div class="service-meta">
+							<div class="service-field">
+								<span class="service-label">WHO IT'S FOR</span>
+								<p class="service-value">{service.audience}</p>
+							</div>
+							<div class="service-field">
+								<span class="service-label">THE PROBLEM</span>
+								<p class="service-value">{service.problem}</p>
+							</div>
+							<div class="service-field">
+								<span class="service-label">WHAT YOU GET</span>
+								<p class="service-value">{service.deliverable}</p>
+							</div>
+						</div>
+						<a href="/contact" class="cta-link service-cta">REQUEST CONSULTATION ↗</a>
+					</div>
+				</div>
+			))}
+		</div>
+	</section>
+</Layout>
+
+<style>
+	/* ── Hero ── */
+	.hero {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	/* ── Services Grid ── */
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0;
+	}
+
+	/* First row: 2 cards, second row: 3 cards */
+	.service-card:nth-child(1),
+	.service-card:nth-child(2) {
+		/* These take up the first row */
+	}
+
+	.service-card {
+		padding: 40px;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		position: relative;
+	}
+
+	.service-number {
+		font-family: var(--font-mono);
+		font-size: 64px;
+		font-weight: 200;
+		color: rgba(255, 255, 255, 0.2);
+		line-height: 1;
+	}
+
+	.service-content {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.service-title {
+		color: #fff;
+	}
+
+	.service-meta {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.service-field {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	.service-label {
+		font-size: 9px;
+		font-weight: 500;
+		letter-spacing: 2px;
+		color: rgba(255, 255, 255, 0.5);
+		text-transform: uppercase;
+	}
+
+	.service-value {
+		font-size: 13px;
+		color: rgba(255, 255, 255, 0.85);
+		line-height: 1.5;
+	}
+
+	.service-cta {
+		color: #fff;
+		margin-top: 8px;
+	}
+
+	/* ── Responsive ── */
+	@media (max-width: 1024px) {
+		.services-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (max-width: 640px) {
+		.services-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

@@ -1,0 +1,5175 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "KLJCo",
+      "x": 0,
+      "y": 0,
+      "name": "Home Page",
+      "width": 1440,
+      "fill": "#E8E9EB",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "SJlj5",
+          "name": "Navigation",
+          "width": "fill_container",
+          "padding": [
+            16,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "jFUbl",
+              "name": "Logo",
+              "fill": "#1A1A1A",
+              "content": "PORTFOLIO",
+              "fontFamily": "Geist Mono",
+              "fontSize": 14,
+              "fontWeight": "200",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "pYSfq",
+              "name": "Nav Links",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "10gu0",
+                  "name": "navHome",
+                  "fill": "#1A1A1A",
+                  "content": "HOME",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "c0IkN",
+                  "name": "navProjects",
+                  "fill": "#666666",
+                  "content": "PROJECTS",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "PDQvx",
+                  "name": "navServices",
+                  "fill": "#666666",
+                  "content": "SERVICES",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "xUJIA",
+                  "name": "navAbout",
+                  "fill": "#666666",
+                  "content": "ABOUT",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "svjZg",
+                  "name": "navBlog",
+                  "fill": "#666666",
+                  "content": "BLOG",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "N8VKs",
+                  "name": "navContact",
+                  "fill": "#666666",
+                  "content": "CONTACT",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "3qdAu",
+          "name": "Divider",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "uzjZC",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 80,
+          "children": [
+            {
+              "type": "text",
+              "id": "HLnB6",
+              "name": "microLabel",
+              "fill": "#999999",
+              "content": "FULL-STACK DEVELOPER",
+              "fontFamily": "Geist",
+              "fontSize": 10,
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "cMufF",
+              "name": "heroHeadline",
+              "fill": "#1A1A1A",
+              "content": "BUILDING\nSYSTEMS\nTHAT MOVE\nBUSINESS\nFORWARD",
+              "lineHeight": 0.95,
+              "fontFamily": "Geist Mono",
+              "fontSize": 88,
+              "fontWeight": "200"
+            },
+            {
+              "type": "text",
+              "id": "jjYk1",
+              "name": "heroDesc",
+              "fill": "#666666",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "Laravel • Next.js • AI Systems • Business Automation",
+              "lineHeight": 1.6,
+              "fontFamily": "Geist",
+              "fontSize": 16
+            },
+            {
+              "type": "frame",
+              "id": "gSdEN",
+              "name": "Hero CTAs",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wAdd4",
+                  "name": "ctaPrimary",
+                  "fill": "#1A1A1A",
+                  "content": "VIEW PROJECTS ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "6C1gS",
+                  "name": "ctaSecondary",
+                  "fill": "#666666",
+                  "content": "CONTACT ME ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "TV5y2",
+          "name": "Divider",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "2TrII",
+          "name": "Skills Snapshot",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "IrVdL",
+              "name": "skillsLabel",
+              "fill": "#999999",
+              "content": "CAPABILITIES",
+              "fontFamily": "Geist",
+              "fontSize": 10,
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "FsaE6",
+              "name": "Skills Grid",
+              "width": "fill_container",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "d2LZ3",
+                  "name": "Backend",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    24,
+                    32,
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "n9Ezd",
+                      "name": "col1Title",
+                      "fill": "#999999",
+                      "content": "BACKEND",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "NiGVx",
+                      "name": "col1Divider",
+                      "fill": "#E0E0E0",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jkKZv",
+                      "name": "col1Items",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WkSRu",
+                          "name": "col1i1",
+                          "fill": "#1A1A1A",
+                          "content": "Laravel",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        },
+                        {
+                          "type": "text",
+                          "id": "sVgy6",
+                          "name": "col1i2",
+                          "fill": "#1A1A1A",
+                          "content": "PHP",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        },
+                        {
+                          "type": "text",
+                          "id": "mXfX9",
+                          "name": "col1i3",
+                          "fill": "#1A1A1A",
+                          "content": "REST APIs",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        },
+                        {
+                          "type": "text",
+                          "id": "Y0H6I",
+                          "name": "col1i4",
+                          "fill": "#1A1A1A",
+                          "content": "WebSockets",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        },
+                        {
+                          "type": "text",
+                          "id": "6Iid9",
+                          "name": "col1i5",
+                          "fill": "#1A1A1A",
+                          "content": "SAP B1 Integration",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7tnKw",
+                  "name": "Frontend",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    24,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tHF42",
+                      "name": "col2Title",
+                      "fill": "#999999",
+                      "content": "FRONTEND",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "wOzVH",
+                      "name": "col2Divider",
+                      "fill": "#E0E0E0",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mr1YB",
+                      "name": "col2Items",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vJXak",
+                          "name": "col2i1",
+                          "fill": "#1A1A1A",
+                          "content": "Next.js",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        },
+                        {
+                          "type": "text",
+                          "id": "xEqFJ",
+                          "name": "col2i2",
+                          "fill": "#1A1A1A",
+                          "content": "React",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        },
+                        {
+                          "type": "text",
+                          "id": "x2LZa",
+                          "name": "col2i3",
+                          "fill": "#1A1A1A",
+                          "content": "Livewire",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        },
+                        {
+                          "type": "text",
+                          "id": "ieOFF",
+                          "name": "col2i4",
+                          "fill": "#1A1A1A",
+                          "content": "Tailwind CSS",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EauKI",
+                  "name": "AI & Automation",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    24,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "p0xuw",
+                      "name": "col3Title",
+                      "fill": "#999999",
+                      "content": "AI & AUTOMATION",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "kzXXc",
+                      "name": "col3Divider",
+                      "fill": "#E0E0E0",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KhTsW",
+                      "name": "col3Items",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dpfzI",
+                          "name": "col3i1",
+                          "fill": "#1A1A1A",
+                          "content": "OpenAI API",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        },
+                        {
+                          "type": "text",
+                          "id": "0V5kK",
+                          "name": "col3i2",
+                          "fill": "#1A1A1A",
+                          "content": "NLP Processing",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        },
+                        {
+                          "type": "text",
+                          "id": "Us6Op",
+                          "name": "col3i3",
+                          "fill": "#1A1A1A",
+                          "content": "Trading Analytics",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        },
+                        {
+                          "type": "text",
+                          "id": "fljEk",
+                          "name": "col3i4",
+                          "fill": "#1A1A1A",
+                          "content": "Automation Workflows",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "0XPgV",
+                  "name": "Systems",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    24,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EOCSO",
+                      "name": "col4Title",
+                      "fill": "#999999",
+                      "content": "SYSTEMS",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "qFX1b",
+                      "name": "col4Divider",
+                      "fill": "#E0E0E0",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QaHff",
+                      "name": "col4Items",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lM45e",
+                          "name": "col4i1",
+                          "fill": "#1A1A1A",
+                          "content": "Server Fundamentals",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        },
+                        {
+                          "type": "text",
+                          "id": "MxC2m",
+                          "name": "col4i2",
+                          "fill": "#1A1A1A",
+                          "content": "Cloud Fundamentals",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        },
+                        {
+                          "type": "text",
+                          "id": "vqa9x",
+                          "name": "col4i3",
+                          "fill": "#1A1A1A",
+                          "content": "API Integrations",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        },
+                        {
+                          "type": "text",
+                          "id": "ERJmD",
+                          "name": "col4i4",
+                          "fill": "#1A1A1A",
+                          "content": "Process Automation",
+                          "fontFamily": "Geist",
+                          "fontSize": 15
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "RKsct",
+          "name": "Divider",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "tm7Qb",
+          "name": "Featured Projects",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            64,
+            80,
+            0,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "fc1km",
+              "name": "projectsLabel",
+              "fill": "#999999",
+              "content": "SELECTED WORK",
+              "fontFamily": "Geist",
+              "fontSize": 10,
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "kUzGi",
+              "name": "projectsHeadline",
+              "fill": "#1A1A1A",
+              "content": "Featured Projects",
+              "fontFamily": "Geist Mono",
+              "fontSize": 48,
+              "fontWeight": "200"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7l7FU",
+          "name": "Project Cards Row",
+          "width": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "T0o3d",
+              "name": "AI Trading Journal",
+              "width": "fill_container",
+              "fill": "#C2956A",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "64mqM",
+                  "name": "card1Cat",
+                  "fill": "#FFFFFF",
+                  "content": "01 — AI SYSTEMS",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "lIxZG",
+                  "name": "card1Title",
+                  "fill": "#FFFFFF",
+                  "content": "AI Trading\nJournal",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 24,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "Pa2s7",
+                  "name": "card1Desc",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "AI-powered journaling system for trading performance analysis with NLP-driven insights and pattern recognition.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "frame",
+                  "id": "p3xlL",
+                  "name": "Screenshot Placeholder",
+                  "width": "fill_container",
+                  "height": 180,
+                  "fill": "#00000020",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UTIco",
+                      "name": "card1PlaceholderText",
+                      "fill": "#FFFFFF80",
+                      "content": "Screenshot placeholder",
+                      "fontFamily": "Geist",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "O61tH",
+                  "name": "card1Stack",
+                  "fill": "#FFFFFF",
+                  "content": "Laravel  •  Next.js  •  OpenAI API",
+                  "fontFamily": "Geist",
+                  "fontSize": 11,
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "suD1K",
+                  "name": "card1CTA",
+                  "fill": "#FFFFFF",
+                  "content": "VIEW PROJECT ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qHlsO",
+              "name": "SAP Monitoring Tool",
+              "width": "fill_container",
+              "fill": "#A38979",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FhzKY",
+                  "name": "card2Cat",
+                  "fill": "#FFFFFF",
+                  "content": "02 — ERP INTEGRATION",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "rDlTC",
+                  "name": "card2Title",
+                  "fill": "#FFFFFF",
+                  "content": "SAP B1 Performance\nMonitoring",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 24,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "pm8md",
+                  "name": "card2Desc",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Real-time monitoring dashboard for SAP Business One performance metrics with alerting and historical analysis.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "frame",
+                  "id": "MJITN",
+                  "name": "Screenshot Placeholder",
+                  "width": "fill_container",
+                  "height": 180,
+                  "fill": "#00000020",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uowNt",
+                      "name": "card2PT",
+                      "fill": "#FFFFFF80",
+                      "content": "Screenshot placeholder",
+                      "fontFamily": "Geist",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "OVIIc",
+                  "name": "card2Stack",
+                  "fill": "#FFFFFF",
+                  "content": "Laravel  •  SAP B1 API  •  React",
+                  "fontFamily": "Geist",
+                  "fontSize": 11,
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "21ltA",
+                  "name": "card2CTA",
+                  "fill": "#FFFFFF",
+                  "content": "VIEW PROJECT ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ATFKs",
+              "name": "Retail Automation",
+              "width": "fill_container",
+              "fill": "#8F5A3C",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "AI4ai",
+                  "name": "card3Cat",
+                  "fill": "#FFFFFF",
+                  "content": "03 — AUTOMATION",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "EtyhC",
+                  "name": "card3Title",
+                  "fill": "#FFFFFF",
+                  "content": "Retail Automation\nSystem",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 24,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "ncFRL",
+                  "name": "card3Desc",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "End-to-end retail automation covering inventory, POS integration, and automated ordering workflows.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "frame",
+                  "id": "6BXWv",
+                  "name": "Screenshot Placeholder",
+                  "width": "fill_container",
+                  "height": 180,
+                  "fill": "#00000020",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gXtJT",
+                      "name": "card3PT",
+                      "fill": "#FFFFFF80",
+                      "content": "Screenshot placeholder",
+                      "fontFamily": "Geist",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "nJqpP",
+                  "name": "card3Stack",
+                  "fill": "#FFFFFF",
+                  "content": "Laravel  •  Livewire  •  Tailwind",
+                  "fontFamily": "Geist",
+                  "fontSize": 11,
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "QJRu0",
+                  "name": "card3CTA",
+                  "fill": "#FFFFFF",
+                  "content": "VIEW PROJECT ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "4KQlB",
+          "name": "Divider",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "j6vC1",
+          "name": "Footer",
+          "width": "fill_container",
+          "gap": 48,
+          "padding": [
+            64,
+            80
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "niTq6",
+              "name": "footerLeft",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xOCFJ",
+                  "name": "footerLogo",
+                  "fill": "#1A1A1A",
+                  "content": "PORTFOLIO",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 14,
+                  "fontWeight": "200",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "A0G1D",
+                  "name": "footerTagline",
+                  "fill": "#666666",
+                  "textGrowth": "fixed-width",
+                  "width": 300,
+                  "content": "Building systems that move business forward.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "c6JUb",
+                  "name": "footerCopy",
+                  "fill": "#999999",
+                  "content": "© 2026 All rights reserved.",
+                  "fontFamily": "Geist",
+                  "fontSize": 11
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OYjL1",
+              "name": "footerCol1",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "g8vKu",
+                  "name": "footerCol1Title",
+                  "fill": "#999999",
+                  "content": "NAVIGATION",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "ZWaRX",
+                  "name": "fc1l1",
+                  "fill": "#666666",
+                  "content": "Home",
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "W8hG2",
+                  "name": "fc1l2",
+                  "fill": "#666666",
+                  "content": "Projects",
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "PlRBy",
+                  "name": "fc1l3",
+                  "fill": "#666666",
+                  "content": "Services",
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "hpcAJ",
+                  "name": "fc1l4",
+                  "fill": "#666666",
+                  "content": "About",
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bDzFD",
+              "name": "footerCol2",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XQpUh",
+                  "name": "footerCol2Title",
+                  "fill": "#999999",
+                  "content": "CONNECT",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "oNCrt",
+                  "name": "fc2l1",
+                  "fill": "#666666",
+                  "content": "GitHub ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "1NQLH",
+                  "name": "fc2l2",
+                  "fill": "#666666",
+                  "content": "LinkedIn ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "uHcnw",
+                  "name": "fc2l3",
+                  "fill": "#666666",
+                  "content": "Contact",
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "4TZ7I",
+                  "name": "fc2l4",
+                  "fill": "#666666",
+                  "content": "Blog",
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "S5JHz",
+      "x": 1540,
+      "y": 0,
+      "name": "Projects Page",
+      "width": 1440,
+      "fill": "#E8E9EB",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "rA3pN",
+          "name": "Navigation",
+          "width": "fill_container",
+          "padding": [
+            16,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "5HPsY",
+              "name": "logo2",
+              "fill": "#1A1A1A",
+              "content": "PORTFOLIO",
+              "fontFamily": "Geist Mono",
+              "fontSize": 14,
+              "fontWeight": "200",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "ETYAm",
+              "name": "Nav Links",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EBxMQ",
+                  "name": "n2l1",
+                  "fill": "#666666",
+                  "content": "HOME",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "RQjqv",
+                  "name": "n2l2",
+                  "fill": "#1A1A1A",
+                  "content": "PROJECTS",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "4nvl6",
+                  "name": "n2l3",
+                  "fill": "#666666",
+                  "content": "SERVICES",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Rib2o",
+                  "name": "n2l4",
+                  "fill": "#666666",
+                  "content": "ABOUT",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "POMTq",
+                  "name": "n2l5",
+                  "fill": "#666666",
+                  "content": "BLOG",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "133ZM",
+                  "name": "n2l6",
+                  "fill": "#666666",
+                  "content": "CONTACT",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "IMYDi",
+          "name": "divP",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "gnZ3w",
+          "name": "Projects Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "d2T3Y",
+              "name": "projLabel",
+              "fill": "#999999",
+              "content": "ALL PROJECTS",
+              "fontFamily": "Geist",
+              "fontSize": 10,
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "D7AmS",
+              "name": "projTitle",
+              "fill": "#1A1A1A",
+              "content": "Work That\nSpeaks For\nItself",
+              "lineHeight": 0.95,
+              "fontFamily": "Geist Mono",
+              "fontSize": 72,
+              "fontWeight": "200"
+            },
+            {
+              "type": "text",
+              "id": "8hfGX",
+              "name": "projDesc",
+              "fill": "#666666",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "Real-world systems built for real businesses. Each project solves a specific problem with clean architecture and measurable results.",
+              "lineHeight": 1.6,
+              "fontFamily": "Geist",
+              "fontSize": 16
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "yiU7W",
+          "name": "divP2",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "MkDla",
+          "name": "Project Detail - AI Trading Journal",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "UTJNG",
+              "name": "projNumber",
+              "fill": "#E0E0E0",
+              "content": "01",
+              "lineHeight": 1,
+              "fontFamily": "Geist Mono",
+              "fontSize": 120,
+              "fontWeight": "200"
+            },
+            {
+              "type": "frame",
+              "id": "RfA7U",
+              "name": "projDetailHeader",
+              "width": "fill_container",
+              "gap": 80,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ocSnn",
+                  "name": "projDetailLeft",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rSO9R",
+                      "name": "projDetailName",
+                      "fill": "#1A1A1A",
+                      "content": "AI Trading Journal",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 36,
+                      "fontWeight": "200"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZIf3K",
+                      "name": "projDetailOverview",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "An AI-powered journaling system that helps traders analyze their performance through NLP-driven insights, pattern recognition, and automated trade categorization.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Geist",
+                      "fontSize": 16
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "q2Kva",
+                  "name": "projDetailRight",
+                  "width": 300,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "edQBV",
+                      "name": "projRLabel1",
+                      "fill": "#999999",
+                      "content": "TECH STACK",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "hocGX",
+                      "name": "projRVal1",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": 300,
+                      "content": "Laravel, Next.js, OpenAI API, PostgreSQL, WebSockets",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Geist",
+                      "fontSize": 14
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "PcpvA",
+                      "name": "projRDiv",
+                      "fill": "#E0E0E0",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "ph4RA",
+                      "name": "projRLabel2",
+                      "fill": "#999999",
+                      "content": "ROLE",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "oLbNc",
+                      "name": "projRVal2",
+                      "fill": "#1A1A1A",
+                      "content": "Full-Stack Developer",
+                      "fontFamily": "Geist",
+                      "fontSize": 14
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "Kp84t",
+                      "name": "projRDiv2",
+                      "fill": "#E0E0E0",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "Memvm",
+                      "name": "projRLabel3",
+                      "fill": "#999999",
+                      "content": "STATUS",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "EFwk6",
+                      "name": "projRVal3",
+                      "fill": "#1A1A1A",
+                      "content": "In Development",
+                      "fontFamily": "Geist",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "1Z0na",
+              "name": "Project Screenshot",
+              "width": "fill_container",
+              "height": 400,
+              "fill": "#1A1A1A",
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NM4bf",
+                  "name": "screenshotText",
+                  "fill": "#666666",
+                  "content": "Project Screenshot",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HDidC",
+              "name": "Problem Solution",
+              "width": "fill_container",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "EoRCa",
+                  "name": "problemCol",
+                  "width": "fill_container",
+                  "fill": "#C2956A",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    32,
+                    32,
+                    32,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tw5RN",
+                      "name": "problemLabel",
+                      "fill": "#FFFFFF",
+                      "content": "THE PROBLEM",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "OHNTl",
+                      "name": "problemText",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Traders lack structured tools to journal and analyze their performance. Manual tracking leads to missed patterns, emotional trading, and repeated mistakes without data-driven feedback.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Geist",
+                      "fontSize": 15
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Nj1bN",
+                  "name": "solutionCol",
+                  "width": "fill_container",
+                  "fill": "#A38979",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kuJY0",
+                      "name": "solutionLabel",
+                      "fill": "#FFFFFF",
+                      "content": "THE SOLUTION",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "nkX31",
+                      "name": "solutionText",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "An AI-assisted journal that automatically categorizes trades, identifies behavioral patterns through NLP, and delivers actionable insights to improve decision-making and consistency.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Geist",
+                      "fontSize": 15
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Esb66",
+              "name": "Architecture",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QnMeX",
+                  "name": "archLabel",
+                  "fill": "#999999",
+                  "content": "ARCHITECTURE",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "frame",
+                  "id": "0cPq3",
+                  "name": "archGrid",
+                  "width": "fill_container",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dWDMZ",
+                      "name": "archCol1",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        24,
+                        24,
+                        24,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cETip",
+                          "name": "archC1Label",
+                          "fill": "#999999",
+                          "content": "BACKEND",
+                          "fontFamily": "Geist",
+                          "fontSize": 10,
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "dpSZc",
+                          "name": "archC1Div",
+                          "fill": "#E0E0E0",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "hNqqm",
+                          "name": "archC1Text",
+                          "fill": "#1A1A1A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Laravel REST API with queue-based AI processing",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Geist",
+                          "fontSize": 14
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xZpO7",
+                      "name": "archCol2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KabXh",
+                          "name": "archC2Label",
+                          "fill": "#999999",
+                          "content": "FRONTEND",
+                          "fontFamily": "Geist",
+                          "fontSize": 10,
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "0XfQK",
+                          "name": "archC2Div",
+                          "fill": "#E0E0E0",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "EmdAI",
+                          "name": "archC2Text",
+                          "fill": "#1A1A1A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Next.js with real-time WebSocket updates",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Geist",
+                          "fontSize": 14
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "d3hA4",
+                      "name": "archCol3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "8I32g",
+                          "name": "archC3Label",
+                          "fill": "#999999",
+                          "content": "AI / EXTERNAL",
+                          "fontFamily": "Geist",
+                          "fontSize": 10,
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "OvXkF",
+                          "name": "archC3Div",
+                          "fill": "#E0E0E0",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "v3OzF",
+                          "name": "archC3Text",
+                          "fill": "#1A1A1A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "OpenAI API for NLP analysis and trade categorization",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Geist",
+                          "fontSize": 14
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "7kasa",
+          "name": "divP3",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "q7BLy",
+          "name": "Project 2 - SAP Monitoring",
+          "width": "fill_container",
+          "gap": 64,
+          "padding": [
+            48,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "7bSUp",
+              "name": "proj2Left",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "p5PzQ",
+                  "name": "proj2Num",
+                  "fill": "#E0E0E0",
+                  "content": "02",
+                  "lineHeight": 1,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 80,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "m3ZwK",
+                  "name": "proj2Name",
+                  "fill": "#1A1A1A",
+                  "content": "SAP B1 Performance\nMonitoring Tool",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 28,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "x5wBr",
+                  "name": "proj2Desc",
+                  "fill": "#666666",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Real-time monitoring dashboard for SAP Business One, tracking performance metrics, system health, and automated alerting for enterprise environments.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "id": "mcQ1z",
+                  "name": "proj2CTA",
+                  "fill": "#1A1A1A",
+                  "content": "VIEW DETAILS ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "eMhRz",
+              "name": "Screenshot",
+              "width": 480,
+              "height": 300,
+              "fill": "#1A1A1A",
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RHrJi",
+                  "name": "proj2ScreenText",
+                  "fill": "#666666",
+                  "content": "Screenshot placeholder",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "1BJJB",
+          "name": "divP4",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "rGt5F",
+          "name": "Project 3 - Retail Automation",
+          "width": "fill_container",
+          "gap": 64,
+          "padding": [
+            48,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "YnqPq",
+              "name": "Screenshot",
+              "width": 480,
+              "height": 300,
+              "fill": "#1A1A1A",
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Mrgdh",
+                  "name": "proj3ScreenText",
+                  "fill": "#666666",
+                  "content": "Screenshot placeholder",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DcasD",
+              "name": "proj3Left",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ypfbD",
+                  "name": "proj3Num",
+                  "fill": "#E0E0E0",
+                  "content": "03",
+                  "lineHeight": 1,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 80,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "s1EQj",
+                  "name": "proj3Name",
+                  "fill": "#1A1A1A",
+                  "content": "Retail Automation\nSystem",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 28,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "BFiqu",
+                  "name": "proj3Desc",
+                  "fill": "#666666",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "End-to-end retail automation system handling inventory management, POS integration, and automated ordering workflows for streamlined operations.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "id": "NICBW",
+                  "name": "proj3CTA",
+                  "fill": "#1A1A1A",
+                  "content": "VIEW DETAILS ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "HZwcq",
+          "name": "divP5",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "tX99K",
+          "name": "Project 4 - WhatsApp Chatbot",
+          "width": "fill_container",
+          "gap": 64,
+          "padding": [
+            48,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "gB4HO",
+              "name": "proj4Left",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mE09Y",
+                  "name": "proj4Num",
+                  "fill": "#E0E0E0",
+                  "content": "04",
+                  "lineHeight": 1,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 80,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "IkeHt",
+                  "name": "proj4Name",
+                  "fill": "#1A1A1A",
+                  "content": "WhatsApp Chatbot\nAPI Integration",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 28,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "vWxVR",
+                  "name": "proj4Desc",
+                  "fill": "#666666",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Automated WhatsApp business chatbot with NLP-powered responses, order tracking, and customer service workflows for retail businesses.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "id": "AnsLm",
+                  "name": "proj4CTA",
+                  "fill": "#1A1A1A",
+                  "content": "VIEW DETAILS ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TUvpx",
+              "name": "Screenshot",
+              "width": 480,
+              "height": 300,
+              "fill": "#1A1A1A",
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "uEe0Y",
+                  "name": "proj4ScreenText",
+                  "fill": "#666666",
+                  "content": "Screenshot placeholder",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "AZ0t0",
+          "name": "divPFooter",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "DOmt4",
+          "name": "Footer",
+          "width": "fill_container",
+          "gap": 48,
+          "padding": [
+            64,
+            80
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "png8N",
+              "name": "f2Left",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lC4HN",
+                  "name": "f2Logo",
+                  "fill": "#1A1A1A",
+                  "content": "PORTFOLIO",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 14,
+                  "fontWeight": "200",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "uswAb",
+                  "name": "f2Tagline",
+                  "fill": "#666666",
+                  "textGrowth": "fixed-width",
+                  "width": 300,
+                  "content": "Building systems that move business forward.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "XlcSL",
+                  "name": "f2Copy",
+                  "fill": "#999999",
+                  "content": "© 2026 All rights reserved.",
+                  "fontFamily": "Geist",
+                  "fontSize": 11
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "5JcBn",
+              "name": "f2Col1",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "u0oBV",
+                  "name": "f2C1Title",
+                  "fill": "#999999",
+                  "content": "NAVIGATION",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "g8vXm",
+                  "name": "f2C1L1",
+                  "fill": "#666666",
+                  "content": "Home",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "tqNfv",
+                  "name": "f2C1L2",
+                  "fill": "#666666",
+                  "content": "Projects",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "SLhyK",
+                  "name": "f2C1L3",
+                  "fill": "#666666",
+                  "content": "Services",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lyuhb",
+              "name": "f2Col2",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NbtcQ",
+                  "name": "f2C2Title",
+                  "fill": "#999999",
+                  "content": "CONNECT",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "TfQwO",
+                  "name": "f2C2L1",
+                  "fill": "#666666",
+                  "content": "GitHub ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "gA2i6",
+                  "name": "f2C2L2",
+                  "fill": "#666666",
+                  "content": "LinkedIn ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "RY5rY",
+                  "name": "f2C2L3",
+                  "fill": "#666666",
+                  "content": "Contact",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "pwnBx",
+      "x": 3080,
+      "y": 0,
+      "name": "About Page",
+      "width": 1440,
+      "fill": "#E8E9EB",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Bj3ZL",
+          "name": "Navigation",
+          "width": "fill_container",
+          "padding": [
+            16,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "0JRqf",
+              "name": "logo3",
+              "fill": "#1A1A1A",
+              "content": "PORTFOLIO",
+              "fontFamily": "Geist Mono",
+              "fontSize": 14,
+              "fontWeight": "200",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "THjt4",
+              "name": "navLinks3",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bCtAt",
+                  "name": "n3l1",
+                  "fill": "#666666",
+                  "content": "HOME",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "vxlX2",
+                  "name": "n3l2",
+                  "fill": "#666666",
+                  "content": "PROJECTS",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "sOWQD",
+                  "name": "n3l3",
+                  "fill": "#666666",
+                  "content": "SERVICES",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "1lawi",
+                  "name": "n3l4",
+                  "fill": "#1A1A1A",
+                  "content": "ABOUT",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "tGdPC",
+                  "name": "n3l5",
+                  "fill": "#666666",
+                  "content": "BLOG",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "CVhk8",
+                  "name": "n3l6",
+                  "fill": "#666666",
+                  "content": "CONTACT",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "Ee4IK",
+          "name": "divA1",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "0CPVU",
+          "name": "About Hero",
+          "width": "fill_container",
+          "gap": 80,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "BWgcN",
+              "name": "aboutLeft",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ygtyt",
+                  "name": "aboutLabel",
+                  "fill": "#999999",
+                  "content": "ABOUT",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "mvkOO",
+                  "name": "aboutTitle",
+                  "fill": "#1A1A1A",
+                  "content": "A Systems-Focused\nFull-Stack\nDeveloper",
+                  "lineHeight": 0.95,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 56,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "acQUz",
+                  "name": "aboutBio",
+                  "fill": "#666666",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "I build automation tools and data-driven applications that solve real business problems. My focus is on clean architecture, performance, and practical solutions that deliver measurable results.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 16
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UL352",
+              "name": "Photo Placeholder",
+              "width": 400,
+              "height": 480,
+              "fill": "#1A1A1A",
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UHMuN",
+                  "name": "aboutPhotoText",
+                  "fill": "#666666",
+                  "content": "Photo",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "OTaFI",
+          "name": "divA2",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "P7EDJ",
+          "name": "What I Focus On",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "lnsTR",
+              "name": "focusLabel",
+              "fill": "#999999",
+              "content": "WHAT I FOCUS ON",
+              "fontFamily": "Geist",
+              "fontSize": 10,
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "lRyQ4",
+              "name": "focusGrid",
+              "width": "fill_container",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DHGwc",
+                  "name": "fgCol1",
+                  "width": "fill_container",
+                  "fill": "#C2956A",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    24,
+                    32,
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m7DDP",
+                      "name": "fg1Title",
+                      "fill": "#FFFFFF",
+                      "content": "Business\nAutomation",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 22,
+                      "fontWeight": "200"
+                    },
+                    {
+                      "type": "text",
+                      "id": "k7C8L",
+                      "name": "fg1Desc",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Streamlining operations through custom-built automation systems that reduce manual work and increase efficiency.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Geist",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wDiLa",
+                  "name": "fgCol2",
+                  "width": "fill_container",
+                  "fill": "#A38979",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    24,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HoQKE",
+                      "name": "fg2Title",
+                      "fill": "#FFFFFF",
+                      "content": "AI-Assisted\nWorkflows",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 22,
+                      "fontWeight": "200"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hLjoO",
+                      "name": "fg2Desc",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Building intelligent systems that leverage AI for data analysis, pattern recognition, and automated decision support.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Geist",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ifMK4",
+                  "name": "fgCol3",
+                  "width": "fill_container",
+                  "fill": "#8F5A3C",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": [
+                    24,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "2M0pv",
+                      "name": "fg3Title",
+                      "fill": "#FFFFFF",
+                      "content": "ERP\nIntegrations",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 22,
+                      "fontWeight": "200"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qruXY",
+                      "name": "fg3Desc",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Custom SAP B1 integrations and monitoring tools that bridge enterprise systems with modern web applications.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Geist",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "H04cm",
+          "name": "divA3",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "eNGb4",
+          "name": "Philosophy",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "GK0zy",
+              "name": "philoLabel",
+              "fill": "#999999",
+              "content": "DEVELOPMENT PHILOSOPHY",
+              "fontFamily": "Geist",
+              "fontSize": 10,
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "2569V",
+              "name": "philoGrid",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wOAH4",
+                  "name": "pCol1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "V64Qq",
+                      "name": "p1Title",
+                      "fill": "#1A1A1A",
+                      "content": "Clean Architecture",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 20,
+                      "fontWeight": "200"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "CpVVc",
+                      "name": "p1Divider",
+                      "fill": "#E0E0E0",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "XVpfX",
+                      "name": "p1Desc",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Code should be readable, maintainable, and structured to scale.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Geist",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zGuWA",
+                  "name": "pCol2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ODaGT",
+                      "name": "p2Title",
+                      "fill": "#1A1A1A",
+                      "content": "Performance First",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 20,
+                      "fontWeight": "200"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "amTUz",
+                      "name": "p2Divider",
+                      "fill": "#E0E0E0",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "HpypT",
+                      "name": "p2Desc",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Performance over complexity. Every system should be fast and efficient by design.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Geist",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AGx0O",
+                  "name": "pCol3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "o1Xyo",
+                      "name": "p3Title",
+                      "fill": "#1A1A1A",
+                      "content": "Build Fast, Iterate",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 20,
+                      "fontWeight": "200"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "12XgK",
+                      "name": "p3Divider",
+                      "fill": "#E0E0E0",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "PfxMY",
+                      "name": "p3Desc",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Ship working systems quickly, then refine based on real feedback and data.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Geist",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "2Zr8x",
+                  "name": "pCol4",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "v3XNY",
+                      "name": "p4Title",
+                      "fill": "#1A1A1A",
+                      "content": "Practical Over Theory",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 20,
+                      "fontWeight": "200"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "TD61k",
+                      "name": "p4Divider",
+                      "fill": "#E0E0E0",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "EJUiA",
+                      "name": "p4Desc",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Solutions built for real-world use. No over-engineering, no unnecessary abstraction.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Geist",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "5K7JN",
+          "name": "divA4",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "6pC50",
+          "name": "Footer",
+          "width": "fill_container",
+          "gap": 48,
+          "padding": [
+            64,
+            80
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Oj7mp",
+              "name": "f3Left",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "uwDMs",
+                  "name": "f3Logo",
+                  "fill": "#1A1A1A",
+                  "content": "PORTFOLIO",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 14,
+                  "fontWeight": "200",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "bhjqU",
+                  "name": "f3Tagline",
+                  "fill": "#666666",
+                  "textGrowth": "fixed-width",
+                  "width": 300,
+                  "content": "Building systems that move business forward.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "4VwFc",
+                  "name": "f3Copy",
+                  "fill": "#999999",
+                  "content": "© 2026 All rights reserved.",
+                  "fontFamily": "Geist",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "stFIg",
+              "name": "f3Col1",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "erx2P",
+                  "name": "f3C1T",
+                  "fill": "#999999",
+                  "content": "NAVIGATION",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "IOd2a",
+                  "name": "f3C1L1",
+                  "fill": "#666666",
+                  "content": "Home",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "IPFGH",
+                  "name": "f3C1L2",
+                  "fill": "#666666",
+                  "content": "Projects",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Pe3xp",
+                  "name": "f3C1L3",
+                  "fill": "#666666",
+                  "content": "Services",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BFMBb",
+              "name": "f3Col2",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZJ8H5",
+                  "name": "f3C2T",
+                  "fill": "#999999",
+                  "content": "CONNECT",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "ebY3D",
+                  "name": "f3C2L1",
+                  "fill": "#666666",
+                  "content": "GitHub ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Lv2fc",
+                  "name": "f3C2L2",
+                  "fill": "#666666",
+                  "content": "LinkedIn ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "TqPML",
+                  "name": "f3C2L3",
+                  "fill": "#666666",
+                  "content": "Contact",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "b24bw",
+      "x": 4620,
+      "y": 0,
+      "name": "Services Page",
+      "width": 1440,
+      "fill": "#E8E9EB",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "kWaeG",
+          "name": "Navigation",
+          "width": "fill_container",
+          "padding": [
+            16,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "GKpdI",
+              "name": "logo4",
+              "fill": "#1A1A1A",
+              "content": "PORTFOLIO",
+              "fontFamily": "Geist Mono",
+              "fontSize": 14,
+              "fontWeight": "200",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "launG",
+              "name": "navLinks4",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "o8cGI",
+                  "name": "n4l1",
+                  "fill": "#666666",
+                  "content": "HOME",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Fp8os",
+                  "name": "n4l2",
+                  "fill": "#666666",
+                  "content": "PROJECTS",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "MIq3Y",
+                  "name": "n4l3",
+                  "fill": "#1A1A1A",
+                  "content": "SERVICES",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "YJ7Ni",
+                  "name": "n4l4",
+                  "fill": "#666666",
+                  "content": "ABOUT",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "mFcrm",
+                  "name": "n4l5",
+                  "fill": "#666666",
+                  "content": "BLOG",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "8nr7K",
+                  "name": "n4l6",
+                  "fill": "#666666",
+                  "content": "CONTACT",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "mDrjY",
+          "name": "divS1",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "BmiRs",
+          "name": "Services Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "gyZJh",
+              "name": "svcLabel",
+              "fill": "#999999",
+              "content": "SERVICES",
+              "fontFamily": "Geist",
+              "fontSize": 10,
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "y5nA5",
+              "name": "svcTitle",
+              "fill": "#1A1A1A",
+              "content": "What I\nCan Build\nFor You",
+              "lineHeight": 0.95,
+              "fontFamily": "Geist Mono",
+              "fontSize": 72,
+              "fontWeight": "200"
+            },
+            {
+              "type": "text",
+              "id": "BxpBn",
+              "name": "svcDesc",
+              "fill": "#666666",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "Each service is designed around real business needs. Clear deliverables, practical solutions, no fluff.",
+              "lineHeight": 1.6,
+              "fontFamily": "Geist",
+              "fontSize": 16
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "pT3HN",
+          "name": "divS2",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "jgtZG",
+          "name": "Service Row 1",
+          "width": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "xK72L",
+              "name": "svc1",
+              "width": "fill_container",
+              "fill": "#C2956A",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                32,
+                40
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "4BYi5",
+                  "name": "svc1Num",
+                  "fill": "#FFFFFF40",
+                  "content": "01",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 48,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "xQVLV",
+                  "name": "svc1Title",
+                  "fill": "#FFFFFF",
+                  "content": "Custom Laravel\nBackend Development",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 22,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "di2Wh",
+                  "name": "svc1For",
+                  "fill": "#FFFFFF",
+                  "content": "FOR: Startups and businesses needing scalable API-first backends",
+                  "fontFamily": "Geist",
+                  "fontSize": 11,
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "KUmB5",
+                  "name": "svc1Desc",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Scalable backend systems with RESTful APIs, authentication, queue management, and clean architecture that grows with your business.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "uALXx",
+                  "name": "svc1CTA",
+                  "fill": "#FFFFFF",
+                  "content": "REQUEST CONSULTATION ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nYcEf",
+              "name": "svc2",
+              "width": "fill_container",
+              "fill": "#A38979",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                32,
+                40
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "AhKcx",
+                  "name": "svc2Num",
+                  "fill": "#FFFFFF40",
+                  "content": "02",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 48,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "OovV1",
+                  "name": "svc2Title",
+                  "fill": "#FFFFFF",
+                  "content": "Next.js Dashboard\nDevelopment",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 22,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "2K49d",
+                  "name": "svc2For",
+                  "fill": "#FFFFFF",
+                  "content": "FOR: Teams needing data visualization and control panels",
+                  "fontFamily": "Geist",
+                  "fontSize": 11,
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "10yY9",
+                  "name": "svc2Desc",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "High-performance dashboards for data visualization, real-time monitoring, and business intelligence with server-side rendering.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "Ti3eQ",
+                  "name": "svc2CTA",
+                  "fill": "#FFFFFF",
+                  "content": "REQUEST CONSULTATION ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "UHWSx",
+          "name": "Service Row 2",
+          "width": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "GVhfu",
+              "name": "svc3",
+              "width": "fill_container",
+              "fill": "#8F5A3C",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                32,
+                40
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "AEwpJ",
+                  "name": "svc3Num",
+                  "fill": "#FFFFFF40",
+                  "content": "03",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 48,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "EI8uo",
+                  "name": "svc3Title",
+                  "fill": "#FFFFFF",
+                  "content": "ERP Integration\n(SAP B1)",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 22,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "yqZDr",
+                  "name": "svc3For",
+                  "fill": "#FFFFFF",
+                  "content": "FOR: Enterprises running SAP Business One",
+                  "fontFamily": "Geist",
+                  "fontSize": 11,
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "iY9gC",
+                  "name": "svc3Desc",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Custom integrations, monitoring dashboards, and automation tools that connect SAP B1 with modern web applications and workflows.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "KYEuY",
+                  "name": "svc3CTA",
+                  "fill": "#FFFFFF",
+                  "content": "REQUEST CONSULTATION ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "osaEZ",
+              "name": "svc4",
+              "width": "fill_container",
+              "fill": "#C2956A",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                32,
+                40
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Bc5Ko",
+                  "name": "svc4Num",
+                  "fill": "#FFFFFF40",
+                  "content": "04",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 48,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "xb4GY",
+                  "name": "svc4Title",
+                  "fill": "#FFFFFF",
+                  "content": "AI-Powered\nInternal Tools",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 22,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "P4btt",
+                  "name": "svc4For",
+                  "fill": "#FFFFFF",
+                  "content": "FOR: Companies automating repetitive processes",
+                  "fontFamily": "Geist",
+                  "fontSize": 11,
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "bE7da",
+                  "name": "svc4Desc",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Custom chatbots, automation systems, and analytics engines powered by AI to transform your internal operations and decision-making.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "Spg67",
+                  "name": "svc4CTA",
+                  "fill": "#FFFFFF",
+                  "content": "REQUEST CONSULTATION ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "G48i6",
+              "name": "svc5",
+              "width": "fill_container",
+              "fill": "#A38979",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                32,
+                40
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QjEqM",
+                  "name": "svc5Num",
+                  "fill": "#FFFFFF40",
+                  "content": "05",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 48,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "tnWOL",
+                  "name": "svc5Title",
+                  "fill": "#FFFFFF",
+                  "content": "Trading Analytics\nTools",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 22,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "hW8P8",
+                  "name": "svc5For",
+                  "fill": "#FFFFFF",
+                  "content": "FOR: Traders seeking data-driven performance tools",
+                  "fontFamily": "Geist",
+                  "fontSize": 11,
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "MdyE9",
+                  "name": "svc5Desc",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Custom dashboards, journaling systems, and performance tracking tools designed to help traders analyze and improve their strategy.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "QoXo3",
+                  "name": "svc5CTA",
+                  "fill": "#FFFFFF",
+                  "content": "REQUEST CONSULTATION ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "DJawP",
+          "name": "divS3",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "FEMko",
+          "name": "Footer",
+          "width": "fill_container",
+          "gap": 48,
+          "padding": [
+            64,
+            80
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Vfwxo",
+              "name": "f4Left",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "j7YMD",
+                  "name": "f4Logo",
+                  "fill": "#1A1A1A",
+                  "content": "PORTFOLIO",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 14,
+                  "fontWeight": "200",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "dW5rr",
+                  "name": "f4Tag",
+                  "fill": "#666666",
+                  "textGrowth": "fixed-width",
+                  "width": 300,
+                  "content": "Building systems that move business forward.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "rdel6",
+                  "name": "f4Copy",
+                  "fill": "#999999",
+                  "content": "© 2026 All rights reserved.",
+                  "fontFamily": "Geist",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "5d7K9",
+              "name": "f4Col1",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JSafF",
+                  "name": "f4C1T",
+                  "fill": "#999999",
+                  "content": "NAVIGATION",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "D4vrn",
+                  "name": "f4C1L1",
+                  "fill": "#666666",
+                  "content": "Home",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "2d41b",
+                  "name": "f4C1L2",
+                  "fill": "#666666",
+                  "content": "Projects",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "2WTMm",
+                  "name": "f4C1L3",
+                  "fill": "#666666",
+                  "content": "Services",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "K1X1n",
+              "name": "f4Col2",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "y32w4",
+                  "name": "f4C2T",
+                  "fill": "#999999",
+                  "content": "CONNECT",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "ca8oI",
+                  "name": "f4C2L1",
+                  "fill": "#666666",
+                  "content": "GitHub ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "sWGlk",
+                  "name": "f4C2L2",
+                  "fill": "#666666",
+                  "content": "LinkedIn ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "hqDyG",
+                  "name": "f4C2L3",
+                  "fill": "#666666",
+                  "content": "Contact",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Htbqn",
+      "x": 6160,
+      "y": 0,
+      "name": "Contact Page",
+      "width": 1440,
+      "fill": "#E8E9EB",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "MYcHH",
+          "name": "Navigation",
+          "width": "fill_container",
+          "padding": [
+            16,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "soltY",
+              "name": "logo5",
+              "fill": "#1A1A1A",
+              "content": "PORTFOLIO",
+              "fontFamily": "Geist Mono",
+              "fontSize": 14,
+              "fontWeight": "200",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "RLkFm",
+              "name": "navLinks5",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "egkni",
+                  "name": "n5l1",
+                  "fill": "#666666",
+                  "content": "HOME",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "NS94v",
+                  "name": "n5l2",
+                  "fill": "#666666",
+                  "content": "PROJECTS",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "LlN7E",
+                  "name": "n5l3",
+                  "fill": "#666666",
+                  "content": "SERVICES",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "WpO8X",
+                  "name": "n5l4",
+                  "fill": "#666666",
+                  "content": "ABOUT",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "VxS8J",
+                  "name": "n5l5",
+                  "fill": "#666666",
+                  "content": "BLOG",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "pqymX",
+                  "name": "n5l6",
+                  "fill": "#1A1A1A",
+                  "content": "CONTACT",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "dfD0f",
+          "name": "divC1",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "CAELa",
+          "name": "Contact Content",
+          "width": "fill_container",
+          "gap": 80,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "fzwNA",
+              "name": "contactLeft",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "T0Huv",
+                  "name": "contactLabel",
+                  "fill": "#999999",
+                  "content": "GET IN TOUCH",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "dLR0z",
+                  "name": "contactTitle",
+                  "fill": "#1A1A1A",
+                  "content": "Let's Build\nSomething\nTogether",
+                  "lineHeight": 0.95,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 56,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "5IQ5t",
+                  "name": "contactDesc",
+                  "fill": "#666666",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Have a project in mind? I work with businesses that need real systems — not templates. Tell me what you're building and let's see if I'm the right fit.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 16
+                },
+                {
+                  "type": "frame",
+                  "id": "a7Qea",
+                  "name": "contactLinks",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AAfCo",
+                      "name": "clGithub",
+                      "fill": "#1A1A1A",
+                      "content": "GitHub ↗",
+                      "fontFamily": "Geist",
+                      "fontSize": 14
+                    },
+                    {
+                      "type": "text",
+                      "id": "OGNit",
+                      "name": "clLinkedin",
+                      "fill": "#1A1A1A",
+                      "content": "LinkedIn ↗",
+                      "fontFamily": "Geist",
+                      "fontSize": 14
+                    },
+                    {
+                      "type": "text",
+                      "id": "aEkpT",
+                      "name": "clCalendly",
+                      "fill": "#1A1A1A",
+                      "content": "Book a Call ↗",
+                      "fontFamily": "Geist",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oRZ1T",
+              "name": "Contact Form",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EEvkY",
+                  "name": "formLabel",
+                  "fill": "#999999",
+                  "content": "INQUIRY FORM",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "frame",
+                  "id": "8e7Ai",
+                  "name": "formRow1",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "GU2bL",
+                      "name": "field1",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Ksl7U",
+                          "name": "field1Label",
+                          "fill": "#999999",
+                          "content": "NAME",
+                          "fontFamily": "Geist",
+                          "fontSize": 10,
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "jqPUl",
+                          "name": "field1Input",
+                          "width": "fill_container",
+                          "height": 44,
+                          "fill": "#FFFFFF",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#E0E0E0"
+                          },
+                          "padding": [
+                            12,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "JVO1p",
+                              "name": "field1Placeholder",
+                              "fill": "#999999",
+                              "content": "Your full name",
+                              "fontFamily": "Geist",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jx0Tu",
+                      "name": "field2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5WQMD",
+                          "name": "field2Label",
+                          "fill": "#999999",
+                          "content": "EMAIL",
+                          "fontFamily": "Geist",
+                          "fontSize": 10,
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "vOToL",
+                          "name": "field2Input",
+                          "width": "fill_container",
+                          "height": 44,
+                          "fill": "#FFFFFF",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#E0E0E0"
+                          },
+                          "padding": [
+                            12,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "BzctY",
+                              "name": "field2Placeholder",
+                              "fill": "#999999",
+                              "content": "email@example.com",
+                              "fontFamily": "Geist",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "j75J3",
+                  "name": "field3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HzVSK",
+                      "name": "field3Label",
+                      "fill": "#999999",
+                      "content": "COMPANY (OPTIONAL)",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "aej8x",
+                      "name": "field3Input",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#FFFFFF",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#E0E0E0"
+                      },
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zC2Ky",
+                          "name": "field3Placeholder",
+                          "fill": "#999999",
+                          "content": "Your company",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "8muhY",
+                  "name": "formRow2",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "rODDT",
+                      "name": "field4",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KtHRJ",
+                          "name": "field4Label",
+                          "fill": "#999999",
+                          "content": "PROJECT TYPE",
+                          "fontFamily": "Geist",
+                          "fontSize": 10,
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "LBIuo",
+                          "name": "field4Input",
+                          "width": "fill_container",
+                          "height": 44,
+                          "fill": "#FFFFFF",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#E0E0E0"
+                          },
+                          "padding": [
+                            12,
+                            16
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Ki9lB",
+                              "name": "field4Val",
+                              "fill": "#999999",
+                              "content": "Select type",
+                              "fontFamily": "Geist",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "VjNAm",
+                              "name": "field4Arrow",
+                              "fill": "#999999",
+                              "content": "↓",
+                              "fontFamily": "Geist",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yrg10",
+                      "name": "field5",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zdtIk",
+                          "name": "field5Label",
+                          "fill": "#999999",
+                          "content": "BUDGET RANGE",
+                          "fontFamily": "Geist",
+                          "fontSize": 10,
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "frame",
+                          "id": "IGuhF",
+                          "name": "field5Input",
+                          "width": "fill_container",
+                          "height": 44,
+                          "fill": "#FFFFFF",
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#E0E0E0"
+                          },
+                          "padding": [
+                            12,
+                            16
+                          ],
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "tZrrj",
+                              "name": "field5Val",
+                              "fill": "#999999",
+                              "content": "Select range",
+                              "fontFamily": "Geist",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "gE7EM",
+                              "name": "field5Arrow",
+                              "fill": "#999999",
+                              "content": "↓",
+                              "fontFamily": "Geist",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tpau9",
+                  "name": "field6",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "4NgoJ",
+                      "name": "field6Label",
+                      "fill": "#999999",
+                      "content": "MESSAGE",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "6rKV0",
+                      "name": "field6Input",
+                      "width": "fill_container",
+                      "height": 140,
+                      "fill": "#FFFFFF",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#E0E0E0"
+                      },
+                      "layout": "vertical",
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Efajd",
+                          "name": "field6Placeholder",
+                          "fill": "#999999",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Describe your project, timeline, and goals...",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xXAlq",
+                  "name": "submitBtn",
+                  "fill": "#1A1A1A",
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    40
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DUMrZ",
+                      "name": "submitText",
+                      "fill": "#FFFFFF",
+                      "content": "SEND INQUIRY",
+                      "fontFamily": "Geist",
+                      "fontSize": 13,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "O4Ent",
+                      "name": "submitArrow",
+                      "fill": "#FFFFFF",
+                      "content": "↗",
+                      "fontFamily": "Geist",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "zHVbh",
+          "name": "divC2",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "gw9w8",
+          "name": "Footer",
+          "width": "fill_container",
+          "gap": 48,
+          "padding": [
+            64,
+            80
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "uFb9t",
+              "name": "f5Left",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "PXs45",
+                  "name": "f5Logo",
+                  "fill": "#1A1A1A",
+                  "content": "PORTFOLIO",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 14,
+                  "fontWeight": "200",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "lWVjD",
+                  "name": "f5Tag",
+                  "fill": "#666666",
+                  "textGrowth": "fixed-width",
+                  "width": 300,
+                  "content": "Building systems that move business forward.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "00rSV",
+                  "name": "f5Copy",
+                  "fill": "#999999",
+                  "content": "© 2026 All rights reserved.",
+                  "fontFamily": "Geist",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kKi8D",
+              "name": "f5Col1",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "seJPb",
+                  "name": "f5C1T",
+                  "fill": "#999999",
+                  "content": "NAVIGATION",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "mcNeC",
+                  "name": "f5C1L1",
+                  "fill": "#666666",
+                  "content": "Home",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "s9jVQ",
+                  "name": "f5C1L2",
+                  "fill": "#666666",
+                  "content": "Projects",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "RRq71",
+                  "name": "f5C1L3",
+                  "fill": "#666666",
+                  "content": "Services",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Jmdy2",
+              "name": "f5Col2",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qN6JN",
+                  "name": "f5C2T",
+                  "fill": "#999999",
+                  "content": "CONNECT",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "Su0pt",
+                  "name": "f5C2L1",
+                  "fill": "#666666",
+                  "content": "GitHub ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "U3PzM",
+                  "name": "f5C2L2",
+                  "fill": "#666666",
+                  "content": "LinkedIn ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "bjb7r",
+                  "name": "f5C2L3",
+                  "fill": "#666666",
+                  "content": "Contact",
+                  "fontFamily": "Geist",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "X9VIp",
+      "x": 7700,
+      "y": 0,
+      "name": "Blog Page",
+      "width": 1440,
+      "fill": "#E8E9EB",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "5Um4Q",
+          "name": "Navigation",
+          "width": "fill_container",
+          "padding": [
+            16,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "eWjJa",
+              "name": "logo6",
+              "fill": "#1A1A1A",
+              "content": "PORTFOLIO",
+              "fontFamily": "Geist Mono",
+              "fontSize": 14,
+              "fontWeight": "200",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "6v9G3",
+              "name": "navLinks6",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "GYKze",
+                  "name": "n6l1",
+                  "fill": "#666666",
+                  "content": "HOME",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "sahI0",
+                  "name": "n6l2",
+                  "fill": "#666666",
+                  "content": "PROJECTS",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "ML4qx",
+                  "name": "n6l3",
+                  "fill": "#666666",
+                  "content": "SERVICES",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "2j0ZK",
+                  "name": "n6l4",
+                  "fill": "#666666",
+                  "content": "ABOUT",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "fx6Bw",
+                  "name": "n6l5",
+                  "fill": "#1A1A1A",
+                  "content": "BLOG",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "hALOc",
+                  "name": "n6l6",
+                  "fill": "#666666",
+                  "content": "CONTACT",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "OiopZ",
+          "name": "divB1",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "0Eirc",
+          "name": "Blog Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "hr3cl",
+              "name": "blogLabel",
+              "fill": "#999999",
+              "content": "BLOG",
+              "fontFamily": "Geist",
+              "fontSize": 10,
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "Y4woM",
+              "name": "blogTitle",
+              "fill": "#1A1A1A",
+              "content": "Technical\nWriting &\nInsights",
+              "lineHeight": 0.95,
+              "fontFamily": "Geist Mono",
+              "fontSize": 72,
+              "fontWeight": "200"
+            },
+            {
+              "type": "text",
+              "id": "k6cdl",
+              "name": "blogDesc",
+              "fill": "#666666",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "Documenting technical knowledge, sharing lessons learned, and exploring the intersection of business and technology.",
+              "lineHeight": 1.6,
+              "fontFamily": "Geist",
+              "fontSize": 16
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "8fPlx",
+          "name": "divBH",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "jbSNS",
+          "name": "Featured Post",
+          "width": "fill_container",
+          "height": 400,
+          "padding": [
+            0,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "xFZzN",
+              "name": "Featured Image",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#C2956A",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "laZU3",
+                  "name": "featImgTxt",
+                  "fill": "#FFFFFF",
+                  "content": "FEATURED\nARTICLE\nIMAGE",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 20,
+                  "fontWeight": "200"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "f7cCQ",
+              "name": "Featured Content",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#F5F5F5",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 48,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "7o10H",
+                  "name": "featTag",
+                  "fill": "#C2956A",
+                  "padding": [
+                    4,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uI9zq",
+                      "name": "featTagTxt",
+                      "fill": "#FFFFFF",
+                      "content": "FEATURED",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Y4Vv2",
+                  "name": "featDate",
+                  "fill": "#999999",
+                  "content": "DECEMBER 2024",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "btliH",
+                  "name": "featTitle",
+                  "fill": "#1A1A1A",
+                  "content": "Integrating Laravel with\nSAP B1 Service Layer",
+                  "lineHeight": 1.15,
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 32,
+                  "fontWeight": "200"
+                },
+                {
+                  "type": "text",
+                  "id": "HMsSE",
+                  "name": "featExcerpt",
+                  "fill": "#666666",
+                  "textGrowth": "fixed-width",
+                  "width": 1000,
+                  "content": "A deep dive into building robust middleware that bridges Laravel applications with SAP Business One's Service Layer API, handling authentication, session management, and complex batch operations.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Geist",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "iJjFQ",
+                  "name": "featCta",
+                  "fill": "#1A1A1A",
+                  "content": "READ ARTICLE ↗",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "TfDhJ",
+          "name": "divBG",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "zMAa5",
+          "name": "Blog Grid Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            64,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "BrCsS",
+              "name": "gridLabel",
+              "fill": "#999999",
+              "content": "ALL ARTICLES",
+              "fontFamily": "Geist",
+              "fontSize": 10,
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "ETXpl",
+              "name": "Blog Row 1",
+              "width": "fill_container",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sA9pP",
+                  "name": "Post 1",
+                  "width": "fill_container",
+                  "fill": "#A38979",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "XtmlT",
+                      "name": "c1tag",
+                      "fill": "#1A1A1A",
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "9Eema",
+                          "name": "c1tagT",
+                          "fill": "#FFFFFF",
+                          "content": "AI / ML",
+                          "fontFamily": "Geist",
+                          "fontSize": 9,
+                          "fontWeight": "500",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "9pGHX",
+                      "name": "c1date",
+                      "fill": "#FFFFFF",
+                      "content": "NOVEMBER 2024",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "kFE23",
+                      "name": "c1title",
+                      "fill": "#FFFFFF",
+                      "content": "Building AI-Powered\nTrading Journals",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 24,
+                      "fontWeight": "200"
+                    },
+                    {
+                      "type": "text",
+                      "id": "FcKLZ",
+                      "name": "c1desc",
+                      "fill": "rgba(255,255,255,0.8)",
+                      "textGrowth": "fixed-width",
+                      "width": 350,
+                      "content": "How machine learning transforms raw trading data into actionable insights and pattern recognition.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Geist",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "J2395",
+                      "name": "c1cta",
+                      "fill": "#FFFFFF",
+                      "content": "READ MORE ↗",
+                      "fontFamily": "Geist",
+                      "fontSize": 11,
+                      "fontWeight": "500",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "va8pl",
+                  "name": "Post 2",
+                  "width": "fill_container",
+                  "fill": "#F5F5F5",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "1NMuG",
+                      "name": "c2tag",
+                      "fill": "#8F5A3C",
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sWACM",
+                          "name": "c2tagT",
+                          "fill": "#FFFFFF",
+                          "content": "ARCHITECTURE",
+                          "fontFamily": "Geist",
+                          "fontSize": 9,
+                          "fontWeight": "500",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "gcaYD",
+                      "name": "c2date",
+                      "fill": "#999999",
+                      "content": "OCTOBER 2024",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "UiWS8",
+                      "name": "c2title",
+                      "fill": "#1A1A1A",
+                      "content": "Designing Scalable\nWebSocket Systems",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 24,
+                      "fontWeight": "200"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RzhZy",
+                      "name": "c2desc",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": 350,
+                      "content": "Strategies for building real-time communication layers that handle thousands of concurrent connections reliably.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Geist",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "On7m7",
+                      "name": "c2cta",
+                      "fill": "#1A1A1A",
+                      "content": "READ MORE ↗",
+                      "fontFamily": "Geist",
+                      "fontSize": 11,
+                      "fontWeight": "500",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GDuKL",
+                  "name": "Post 3",
+                  "width": "fill_container",
+                  "fill": "#C2956A",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nx58a",
+                      "name": "c3tag",
+                      "fill": "#1A1A1A",
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Uvv0p",
+                          "name": "c3tagT",
+                          "fill": "#FFFFFF",
+                          "content": "ERP",
+                          "fontFamily": "Geist",
+                          "fontSize": 9,
+                          "fontWeight": "500",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "yHCH9",
+                      "name": "c3date",
+                      "fill": "#FFFFFF",
+                      "content": "SEPTEMBER 2024",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "tLCvi",
+                      "name": "c3title",
+                      "fill": "#FFFFFF",
+                      "content": "ERP Event-Driven\nArchitecture",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 24,
+                      "fontWeight": "200"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Td6bI",
+                      "name": "c3desc",
+                      "fill": "rgba(255,255,255,0.8)",
+                      "textGrowth": "fixed-width",
+                      "width": 350,
+                      "content": "Implementing event-driven patterns in enterprise resource planning systems for real-time data synchronization.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Geist",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "tJBM5",
+                      "name": "c3cta",
+                      "fill": "#FFFFFF",
+                      "content": "READ MORE ↗",
+                      "fontFamily": "Geist",
+                      "fontSize": 11,
+                      "fontWeight": "500",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SsnKW",
+              "name": "Blog Row 2",
+              "width": "fill_container",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MCn2C",
+                  "name": "Post 4",
+                  "width": "fill_container",
+                  "fill": "#F5F5F5",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "6Jod9",
+                      "name": "c4tag",
+                      "fill": "#A38979",
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YoWGD",
+                          "name": "c4tagT",
+                          "fill": "#FFFFFF",
+                          "content": "AUTOMATION",
+                          "fontFamily": "Geist",
+                          "fontSize": 9,
+                          "fontWeight": "500",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "OD0m7",
+                      "name": "c4date",
+                      "fill": "#999999",
+                      "content": "AUGUST 2024",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "3CpuK",
+                      "name": "c4title",
+                      "fill": "#1A1A1A",
+                      "content": "Retail Automation\nStrategies",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 24,
+                      "fontWeight": "200"
+                    },
+                    {
+                      "type": "text",
+                      "id": "lAm2m",
+                      "name": "c4desc",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": 350,
+                      "content": "Practical approaches to automating retail operations from inventory management to customer engagement flows.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Geist",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "lBYTC",
+                      "name": "c4cta",
+                      "fill": "#1A1A1A",
+                      "content": "READ MORE ↗",
+                      "fontFamily": "Geist",
+                      "fontSize": 11,
+                      "fontWeight": "500",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "0bz99",
+                  "name": "Post 5",
+                  "width": "fill_container",
+                  "fill": "#8F5A3C",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YkVGc",
+                      "name": "c5tag",
+                      "fill": "#FFFFFF",
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "orF8T",
+                          "name": "c5tagT",
+                          "fill": "#1A1A1A",
+                          "content": "CLOUD",
+                          "fontFamily": "Geist",
+                          "fontSize": 9,
+                          "fontWeight": "500",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "M35Nl",
+                      "name": "c5date",
+                      "fill": "rgba(255,255,255,0.7)",
+                      "content": "JULY 2024",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "TARWf",
+                      "name": "c5title",
+                      "fill": "#FFFFFF",
+                      "content": "Cloud Fundamentals\nfor Backend Devs",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 24,
+                      "fontWeight": "200"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vUDfT",
+                      "name": "c5desc",
+                      "fill": "rgba(255,255,255,0.8)",
+                      "textGrowth": "fixed-width",
+                      "width": 350,
+                      "content": "Essential cloud concepts and services every backend developer should know for modern application deployment.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Geist",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "R5JPO",
+                      "name": "c5cta",
+                      "fill": "#FFFFFF",
+                      "content": "READ MORE ↗",
+                      "fontFamily": "Geist",
+                      "fontSize": 11,
+                      "fontWeight": "500",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Tqgjk",
+                  "name": "Post 6",
+                  "width": "fill_container",
+                  "fill": "#F5F5F5",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "sfR7e",
+                      "name": "c6tag",
+                      "fill": "#C2956A",
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "2Apav",
+                          "name": "c6tagT",
+                          "fill": "#FFFFFF",
+                          "content": "CHATBOTS",
+                          "fontFamily": "Geist",
+                          "fontSize": 9,
+                          "fontWeight": "500",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "QLJOL",
+                      "name": "c6date",
+                      "fill": "#999999",
+                      "content": "JUNE 2024",
+                      "fontFamily": "Geist",
+                      "fontSize": 10,
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "ONc5h",
+                      "name": "c6title",
+                      "fill": "#1A1A1A",
+                      "content": "WhatsApp Chatbot\nDesign Patterns",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 24,
+                      "fontWeight": "200"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BBPpE",
+                      "name": "c6desc",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": 350,
+                      "content": "Best practices for designing conversational AI flows and integrating WhatsApp Business API into existing systems.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Geist",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "3zUiL",
+                      "name": "c6cta",
+                      "fill": "#1A1A1A",
+                      "content": "READ MORE ↗",
+                      "fontFamily": "Geist",
+                      "fontSize": 11,
+                      "fontWeight": "500",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "shAeC",
+          "name": "divBF",
+          "fill": "#E0E0E0",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "c6DZy",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#1A1A1A",
+          "padding": [
+            24,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "pTvzy",
+              "name": "fLeft6",
+              "fill": "#999999",
+              "content": "© 2024 PORTFOLIO",
+              "fontFamily": "Geist Mono",
+              "fontSize": 11,
+              "fontWeight": "200",
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "rhkCk",
+              "name": "fRight6",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "d8bSE",
+                  "name": "fR6a",
+                  "fill": "#999999",
+                  "content": "GITHUB",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "q3KuI",
+                  "name": "fR6b",
+                  "fill": "#999999",
+                  "content": "LINKEDIN",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Sp6Ee",
+                  "name": "fR6c",
+                  "fill": "#999999",
+                  "content": "EMAIL",
+                  "fontFamily": "Geist",
+                  "fontSize": 10,
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

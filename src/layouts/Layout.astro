@@ -1,23 +1,179 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title?: string;
+	description?: string;
+	activeNav?: string;
+}
+
+const {
+	title = 'Portfolio — Full-Stack Developer',
+	description = 'Full-Stack Developer specializing in Laravel, Next.js, AI Systems, and Business Automation.',
+	activeNav = '',
+} = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<meta name="description" content={description} />
+
+		<!-- Geist & Geist Mono fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@200;400;500;700&family=Geist:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<Navbar active={activeNav} />
+		<main>
+			<slot />
+		</main>
+		<Footer />
 	</body>
 </html>
 
-<style>
-	html,
-	body {
+<style is:global>
+	/* ── Reset ── */
+	*,
+	*::before,
+	*::after {
 		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	/* ── Design tokens ── */
+	:root {
+		--color-bg: #e8e9eb;
+		--color-text: #1a1a1a;
+		--color-secondary: #666666;
+		--color-tertiary: #999999;
+		--color-divider: #e0e0e0;
+		--color-surface: #f5f5f5;
+		--color-caramel: #c2956a;
+		--color-taupe: #a38979;
+		--color-sienna: #8f5a3c;
+		--font-mono: 'Geist Mono', monospace;
+		--font-sans: 'Geist', sans-serif;
+		--page-padding: 80px;
+		--max-width: 1440px;
+	}
+
+	html {
+		font-size: 16px;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	body {
+		font-family: var(--font-sans);
+		background: var(--color-bg);
+		color: var(--color-text);
+		line-height: 1.6;
+	}
+
+	img {
+		max-width: 100%;
+		display: block;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	/* ── Utility classes ── */
+	.section-padding {
+		padding: 64px var(--page-padding);
+	}
+
+	.micro-label {
+		font-family: var(--font-sans);
+		font-size: 10px;
+		font-weight: 400;
+		letter-spacing: 3px;
+		color: var(--color-tertiary);
+		text-transform: uppercase;
+	}
+
+	.headline {
+		font-family: var(--font-mono);
+		font-weight: 200;
+		color: var(--color-text);
+		line-height: 0.95;
+	}
+
+	.headline--hero {
+		font-size: clamp(48px, 6vw, 88px);
+	}
+
+	.headline--page {
+		font-size: clamp(40px, 5vw, 72px);
+	}
+
+	.headline--section {
+		font-size: clamp(28px, 3vw, 40px);
+	}
+
+	.headline--card {
+		font-size: clamp(20px, 2vw, 24px);
+		line-height: 1.2;
+	}
+
+	.body-text {
+		font-family: var(--font-sans);
+		font-size: 16px;
+		font-weight: 400;
+		color: var(--color-secondary);
+		line-height: 1.6;
+		max-width: 600px;
+	}
+
+	.cta-link {
+		font-family: var(--font-sans);
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		text-decoration: underline;
+		color: var(--color-text);
+		cursor: pointer;
+		background: none;
+		border: none;
+		text-transform: uppercase;
+	}
+
+	.cta-link:hover {
+		opacity: 0.7;
+	}
+
+	.divider {
 		width: 100%;
-		height: 100%;
+		height: 1px;
+		background: var(--color-divider);
+	}
+
+	/* ── Responsive ── */
+	@media (max-width: 1024px) {
+		:root {
+			--page-padding: 40px;
+		}
+	}
+
+	@media (max-width: 640px) {
+		:root {
+			--page-padding: 20px;
+		}
 	}
 </style>

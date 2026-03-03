@@ -1,11 +1,260 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const featuredProjects = [
+	{
+		title: 'AI Trading Journal',
+		description: 'Machine learning powered trading analytics with pattern recognition and automated journaling.',
+		stack: ['Laravel', 'Next.js', 'OpenAI', 'WebSockets'],
+		color: 'var(--color-caramel)',
+	},
+	{
+		title: 'SAP B1 Monitoring Tool',
+		description: 'Real-time performance monitoring and alerting for SAP Business One environments.',
+		stack: ['ASP.NET', 'React', 'SAP Service Layer', 'SQL Server'],
+		color: 'var(--color-taupe)',
+	},
+	{
+		title: 'Retail Automation System',
+		description: 'End-to-end automation for retail operations including inventory, POS, and customer engagement.',
+		stack: ['Laravel', 'Livewire', 'REST APIs', 'MySQL'],
+		color: 'var(--color-sienna)',
+	},
+];
+
+const skills = [
+	{
+		category: 'Backend',
+		items: ['Laravel', 'PHP', 'REST APIs', 'WebSockets', 'SAP B1 Service Layer'],
+	},
+	{
+		category: 'Frontend',
+		items: ['Next.js', 'React', 'Livewire', 'Tailwind CSS'],
+	},
+	{
+		category: 'AI & Automation',
+		items: ['OpenAI API', 'NLP Processing', 'Trading Analytics', 'Automation Workflows'],
+	},
+	{
+		category: 'Systems',
+		items: ['Server Fundamentals', 'Cloud Fundamentals', 'API Integrations', 'Business Process Automation'],
+	},
+];
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Portfolio — Full-Stack Developer" activeNav="HOME">
+	<!-- Hero Section -->
+	<section class="hero section-padding">
+		<span class="micro-label">FULL-STACK DEVELOPER</span>
+		<h1 class="headline headline--hero">
+			Building Systems<br />That Move<br />Business Forward
+		</h1>
+		<p class="body-text">
+			Full-Stack Developer specializing in Laravel, Next.js, AI-powered systems,
+			and business automation. I build real-world tools that solve real problems.
+		</p>
+		<div class="hero-ctas">
+			<a href="/projects" class="cta-link">VIEW PROJECTS ↗</a>
+			<a href="/contact" class="cta-link">CONTACT ME ↗</a>
+		</div>
+	</section>
+
+	<div class="divider"></div>
+
+	<!-- Skills Snapshot -->
+	<section class="skills section-padding">
+		<span class="micro-label">CAPABILITIES</span>
+		<div class="skills-grid">
+			{skills.map((skill) => (
+				<div class="skill-col">
+					<h3 class="skill-title">{skill.category}</h3>
+					<ul class="skill-list">
+						{skill.items.map((item) => (
+							<li>{item}</li>
+						))}
+					</ul>
+				</div>
+			))}
+		</div>
+	</section>
+
+	<div class="divider"></div>
+
+	<!-- Featured Projects -->
+	<section class="featured section-padding">
+		<span class="micro-label">FEATURED WORK</span>
+		<div class="projects-grid">
+			{featuredProjects.map((project) => (
+				<div class="project-card" style={`background: ${project.color}`}>
+					<div class="project-card__inner">
+						<h3 class="headline headline--card project-card__title">{project.title}</h3>
+						<p class="project-card__desc">{project.description}</p>
+						<div class="project-card__stack">
+							{project.stack.map((tech) => (
+								<span class="tech-tag">{tech}</span>
+							))}
+						</div>
+						<a href="/projects" class="cta-link project-card__cta">VIEW PROJECT ↗</a>
+					</div>
+				</div>
+			))}
+		</div>
+	</section>
 </Layout>
+
+<style>
+	/* ── Hero ── */
+	.hero {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		min-height: 70vh;
+		justify-content: center;
+	}
+
+	.hero-ctas {
+		display: flex;
+		gap: 32px;
+		margin-top: 8px;
+	}
+
+	/* ── Skills ── */
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.skills-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 0;
+	}
+
+	.skill-col {
+		padding: 32px;
+		border-right: 1px solid var(--color-divider);
+	}
+
+	.skill-col:last-child {
+		border-right: none;
+	}
+
+	.skill-title {
+		font-family: var(--font-mono);
+		font-size: 14px;
+		font-weight: 200;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		margin-bottom: 16px;
+		color: var(--color-text);
+	}
+
+	.skill-list {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.skill-list li {
+		font-family: var(--font-sans);
+		font-size: 13px;
+		color: var(--color-secondary);
+	}
+
+	/* ── Featured Projects ── */
+	.featured {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.projects-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0;
+	}
+
+	.project-card {
+		padding: 0;
+	}
+
+	.project-card__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		padding: 32px;
+	}
+
+	.project-card__title {
+		color: #fff;
+	}
+
+	.project-card__desc {
+		font-size: 13px;
+		color: rgba(255, 255, 255, 0.8);
+		line-height: 1.5;
+	}
+
+	.project-card__stack {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	.tech-tag {
+		font-size: 9px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 4px 10px;
+		background: rgba(0, 0, 0, 0.2);
+	}
+
+	.project-card__cta {
+		color: #fff;
+		margin-top: 8px;
+	}
+
+	/* ── Responsive ── */
+	@media (max-width: 1024px) {
+		.skills-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.skill-col:nth-child(2) {
+			border-right: none;
+		}
+
+		.skill-col:nth-child(3),
+		.skill-col:nth-child(4) {
+			border-top: 1px solid var(--color-divider);
+		}
+
+		.projects-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.skills-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.skill-col {
+			border-right: none;
+			border-bottom: 1px solid var(--color-divider);
+		}
+
+		.skill-col:last-child {
+			border-bottom: none;
+		}
+
+		.hero-ctas {
+			flex-direction: column;
+			gap: 16px;
+		}
+	}
+</style>

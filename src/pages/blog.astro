@@ -1,0 +1,291 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const featuredPost = {
+	title: 'Integrating Laravel with SAP B1 Service Layer',
+	excerpt: 'A deep dive into building robust middleware that bridges Laravel applications with SAP Business One\'s Service Layer API, handling authentication, session management, and complex batch operations.',
+	date: 'December 2024',
+	category: 'ERP',
+};
+
+const posts = [
+	{
+		title: 'Building AI-Powered Trading Journals',
+		excerpt: 'How machine learning transforms raw trading data into actionable insights and pattern recognition.',
+		date: 'November 2024',
+		category: 'AI / ML',
+		color: 'var(--color-taupe)',
+		light: false,
+	},
+	{
+		title: 'Designing Scalable WebSocket Systems',
+		excerpt: 'Strategies for building real-time communication layers that handle thousands of concurrent connections reliably.',
+		date: 'October 2024',
+		category: 'ARCHITECTURE',
+		color: 'var(--color-surface)',
+		light: true,
+	},
+	{
+		title: 'ERP Event-Driven Architecture',
+		excerpt: 'Implementing event-driven patterns in enterprise resource planning systems for real-time data synchronization.',
+		date: 'September 2024',
+		category: 'ERP',
+		color: 'var(--color-caramel)',
+		light: false,
+	},
+	{
+		title: 'Retail Automation Strategies',
+		excerpt: 'Practical approaches to automating retail operations from inventory management to customer engagement flows.',
+		date: 'August 2024',
+		category: 'AUTOMATION',
+		color: 'var(--color-surface)',
+		light: true,
+	},
+	{
+		title: 'Cloud Fundamentals for Backend Devs',
+		excerpt: 'Essential cloud concepts and services every backend developer should know for modern application deployment.',
+		date: 'July 2024',
+		category: 'CLOUD',
+		color: 'var(--color-sienna)',
+		light: false,
+	},
+	{
+		title: 'WhatsApp Chatbot Design Patterns',
+		excerpt: 'Best practices for designing conversational AI flows and integrating WhatsApp Business API into existing systems.',
+		date: 'June 2024',
+		category: 'CHATBOTS',
+		color: 'var(--color-surface)',
+		light: true,
+	},
+];
+---
+
+<Layout title="Blog — Portfolio" activeNav="BLOG">
+	<!-- Hero -->
+	<section class="hero section-padding">
+		<span class="micro-label">BLOG</span>
+		<h1 class="headline headline--page">
+			Technical<br />Writing &amp;<br />Insights
+		</h1>
+		<p class="body-text">
+			Documenting technical knowledge, sharing lessons learned, and
+			exploring the intersection of business and technology.
+		</p>
+	</section>
+
+	<div class="divider"></div>
+
+	<!-- Featured Post -->
+	<section class="featured-post">
+		<div class="featured-image">
+			<span class="featured-image-text">FEATURED<br />ARTICLE<br />IMAGE</span>
+		</div>
+		<div class="featured-content">
+			<div class="featured-tag">
+				<span>FEATURED</span>
+			</div>
+			<span class="featured-date">{featuredPost.date.toUpperCase()}</span>
+			<h2 class="headline headline--section featured-title">{featuredPost.title}</h2>
+			<p class="featured-excerpt">{featuredPost.excerpt}</p>
+			<a href="#" class="cta-link">READ ARTICLE ↗</a>
+		</div>
+	</section>
+
+	<div class="divider"></div>
+
+	<!-- Blog Grid -->
+	<section class="blog-grid-section section-padding">
+		<span class="micro-label">ALL ARTICLES</span>
+		<div class="blog-grid">
+			{posts.map((post) => (
+				<article class:list={['blog-card', { 'blog-card--light': post.light }]} style={`background: ${post.color}`}>
+					<div class="blog-card__tag" style={post.light ? `background: var(--color-sienna)` : `background: var(--color-text)`}>
+						<span>{post.category}</span>
+					</div>
+					<span class:list={['blog-card__date', { 'blog-card__date--dark': post.light }]}>
+						{post.date.toUpperCase()}
+					</span>
+					<h3 class:list={['headline headline--card blog-card__title', { 'blog-card__title--dark': post.light }]}>
+						{post.title}
+					</h3>
+					<p class:list={['blog-card__desc', { 'blog-card__desc--dark': post.light }]}>
+						{post.excerpt}
+					</p>
+					<a href="#" class:list={['cta-link blog-card__cta', { 'blog-card__cta--dark': post.light }]}>
+						READ MORE ↗
+					</a>
+				</article>
+			))}
+		</div>
+	</section>
+</Layout>
+
+<style>
+	/* ── Hero ── */
+	.hero {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	/* ── Featured Post ── */
+	.featured-post {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 0 var(--page-padding);
+	}
+
+	.featured-image {
+		background: var(--color-caramel);
+		min-height: 400px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.featured-image-text {
+		font-family: var(--font-mono);
+		font-size: 20px;
+		font-weight: 200;
+		color: #fff;
+		text-align: center;
+		line-height: 1.5;
+	}
+
+	.featured-content {
+		background: var(--color-surface);
+		padding: 48px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		justify-content: center;
+	}
+
+	.featured-tag {
+		display: inline-flex;
+		align-self: flex-start;
+		padding: 4px 12px;
+		background: var(--color-caramel);
+	}
+
+	.featured-tag span {
+		font-family: var(--font-sans);
+		font-size: 10px;
+		font-weight: 500;
+		letter-spacing: 2px;
+		color: #fff;
+	}
+
+	.featured-date {
+		font-family: var(--font-sans);
+		font-size: 10px;
+		font-weight: 400;
+		letter-spacing: 2px;
+		color: var(--color-tertiary);
+	}
+
+	.featured-title {
+		font-size: clamp(24px, 2.5vw, 32px);
+		line-height: 1.15;
+	}
+
+	.featured-excerpt {
+		font-size: 14px;
+		color: var(--color-secondary);
+		line-height: 1.6;
+	}
+
+	/* ── Blog Grid ── */
+	.blog-grid-section {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.blog-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0;
+	}
+
+	.blog-card {
+		padding: 32px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.blog-card__tag {
+		display: inline-flex;
+		align-self: flex-start;
+		padding: 4px 10px;
+	}
+
+	.blog-card__tag span {
+		font-family: var(--font-sans);
+		font-size: 9px;
+		font-weight: 500;
+		letter-spacing: 2px;
+		color: #fff;
+	}
+
+	.blog-card__date {
+		font-family: var(--font-sans);
+		font-size: 10px;
+		font-weight: 400;
+		letter-spacing: 2px;
+		color: rgba(255, 255, 255, 0.7);
+	}
+
+	.blog-card__date--dark {
+		color: var(--color-tertiary);
+	}
+
+	.blog-card__title {
+		color: #fff;
+	}
+
+	.blog-card__title--dark {
+		color: var(--color-text);
+	}
+
+	.blog-card__desc {
+		font-size: 13px;
+		color: rgba(255, 255, 255, 0.8);
+		line-height: 1.5;
+	}
+
+	.blog-card__desc--dark {
+		color: var(--color-secondary);
+	}
+
+	.blog-card__cta {
+		color: #fff;
+	}
+
+	.blog-card__cta--dark {
+		color: var(--color-text);
+	}
+
+	/* ── Responsive ── */
+	@media (max-width: 1024px) {
+		.blog-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (max-width: 768px) {
+		.featured-post {
+			grid-template-columns: 1fr;
+			margin: 0;
+		}
+
+		.featured-image {
+			min-height: 200px;
+		}
+
+		.blog-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

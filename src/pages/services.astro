@@ -82,7 +82,7 @@ const services = [
 								<p class="service-value">{service.deliverable}</p>
 							</div>
 						</div>
-						<a href={`${import.meta.env.BASE_URL}contact`} class="cta-link service-cta">REQUEST CONSULTATION ↗</a>
+						<a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}contact`} class="cta-link service-cta">REQUEST CONSULTATION ↗</a>
 					</div>
 				</div>
 			))}

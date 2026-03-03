@@ -4,10 +4,10 @@ interface Props {
 }
 
 const { active = '' } = Astro.props;
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 
 const links = [
-	{ label: 'HOME', href: `${base}` },
+	{ label: 'HOME', href: base },
 	{ label: 'PROJECTS', href: `${base}projects` },
 	{ label: 'SERVICES', href: `${base}services` },
 	{ label: 'ABOUT', href: `${base}about` },

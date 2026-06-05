@@ -3,15 +3,15 @@ import Layout from '../layouts/Layout.astro';
 
 const featuredProjects = [
 	{
-		title: 'AI Trading Journal',
-		description: 'Machine learning powered trading analytics with pattern recognition and automated journaling.',
-		stack: ['Laravel', 'Next.js', 'OpenAI', 'WebSockets'],
+		title: 'Plant Maintenance Management System',
+		description: 'Integrated maintenance and fixed asset management for plants, equipment, work orders, and asset lifecycle tracking.',
+		stack: ['Laravel', 'Livewire', 'Work Orders', 'Asset Tracking'],
 		color: 'var(--color-caramel)',
 	},
 	{
-		title: 'SAP B1 Monitoring Tool',
-		description: 'Real-time performance monitoring and alerting for SAP Business One environments.',
-		stack: ['ASP.NET', 'React', 'SAP Service Layer', 'SQL Server'],
+		title: 'Legal Case Management System',
+		description: 'Role-based law firm operations platform for case tracking, client records, document workflows, scheduling, billing, reporting, and 2FA-secured access.',
+		stack: ['Case Tracking', '2FA', 'Billing', 'Reporting'],
 		color: 'var(--color-taupe)',
 	},
 	{
@@ -25,7 +25,7 @@ const featuredProjects = [
 const skills = [
 	{
 		category: 'Backend',
-		items: ['Laravel', 'PHP', 'REST APIs', 'WebSockets', 'SAP B1 Service Layer'],
+		items: ['Laravel', 'PHP', 'REST APIs', 'WebSockets', 'Role-Based Access Control'],
 	},
 	{
 		category: 'Frontend',
@@ -45,15 +45,15 @@ const skills = [
 <Layout title="Portfolio — Full-Stack Developer" activeNav="HOME">
 	<!-- Hero Section -->
 	<section class="hero section-padding">
-		<span class="micro-label">FULL-STACK DEVELOPER</span>
-		<h1 class="headline headline--hero">
+		<span class="micro-label" data-aos="fade-up">FULL-STACK DEVELOPER</span>
+		<h1 class="headline headline--hero" data-aos="fade-up" data-aos-delay="100">
 			Building Systems<br />That Move<br />Business Forward
 		</h1>
-		<p class="body-text">
+		<p class="body-text" data-aos="fade-up" data-aos-delay="200">
 			Full-Stack Developer specializing in Laravel, Next.js, AI-powered systems,
 			and business automation. I build real-world tools that solve real problems.
 		</p>
-		<div class="hero-ctas">
+		<div class="hero-ctas" data-aos="fade-up" data-aos-delay="300">
 			<a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}projects`} class="cta-link">VIEW PROJECTS ↗</a>
 			<a href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}contact`} class="cta-link">CONTACT ME ↗</a>
 		</div>
@@ -65,8 +65,8 @@ const skills = [
 	<section class="skills section-padding">
 		<span class="micro-label">CAPABILITIES</span>
 		<div class="skills-grid">
-			{skills.map((skill) => (
-				<div class="skill-col">
+			{skills.map((skill, i) => (
+				<div class="skill-col" data-aos="fade-up" data-aos-delay={i * 100}>
 					<h3 class="skill-title">{skill.category}</h3>
 					<ul class="skill-list">
 						{skill.items.map((item) => (
@@ -84,8 +84,8 @@ const skills = [
 	<section class="featured section-padding">
 		<span class="micro-label">FEATURED WORK</span>
 		<div class="projects-grid">
-			{featuredProjects.map((project) => (
-				<div class="project-card" style={`background: ${project.color}`}>
+			{featuredProjects.map((project, i) => (
+				<div class="project-card card-hover" style={`background: ${project.color}`} data-aos="fade-up" data-aos-delay={i * 100}>
 					<div class="project-card__inner">
 						<h3 class="headline headline--card project-card__title">{project.title}</h3>
 						<p class="project-card__desc">{project.description}</p>
@@ -178,6 +178,7 @@ const skills = [
 
 	.project-card {
 		padding: 0;
+		overflow: hidden;
 	}
 
 	.project-card__inner {

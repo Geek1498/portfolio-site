@@ -20,26 +20,26 @@ const services = [
 	},
 	{
 		number: '03',
-		title: 'ERP Integration (SAP B1)',
-		audience: 'Companies running SAP Business One',
-		problem: 'Disconnected systems creating data silos and manual reconciliation work.',
-		deliverable: 'Custom middleware and monitoring tools connecting SAP B1 to your existing stack.',
+		title: 'Legal Operations Platforms',
+		audience: 'Law firms and legal teams managing complex casework',
+		problem: 'Case tracking, client records, documents, schedules, and billing often live in separate tools that slow teams down and reduce operational visibility.',
+		deliverable: 'Role-based case management systems with secure access, document workflows, scheduling, billing, reporting, and 2FA support.',
 		color: 'var(--color-sienna)',
 	},
 	{
 		number: '04',
-		title: 'AI-Powered Internal Tools',
-		audience: 'Businesses looking to leverage AI for operations',
-		problem: 'Manual processes that could be automated with intelligent systems.',
-		deliverable: 'Chatbots, automation systems, and analytics engines powered by OpenAI and custom ML.',
+		title: 'Procurement & P2P Platforms',
+		audience: 'Businesses modernizing purchasing across procurement, logistics, finance, and admin teams',
+		problem: 'Spreadsheet- and email-driven purchasing creates approval delays, weak audit trails, and poor visibility across the purchase-to-pay lifecycle.',
+		deliverable: 'Role-based procurement platforms covering purchase requests, multi-level approvals, purchase orders, goods receipt, border-clearance tracking, invoice processing, finance settlement, and audit logging.',
 		color: 'var(--color-caramel)',
 	},
 	{
 		number: '05',
-		title: 'Trading Analytics Tools',
-		audience: 'Traders and financial firms',
-		problem: 'Lack of systematic data capture and performance analysis in trading workflows.',
-		deliverable: 'Custom dashboards, journaling systems, and performance tracking tools.',
+		title: 'Plant Maintenance Platforms',
+		audience: 'Industrial teams managing plants, equipment, and fixed assets',
+		problem: 'Maintenance planning, equipment records, work orders, and asset lifecycle data are often spread across disconnected systems that reduce visibility and slow execution.',
+		deliverable: 'Centralized plant maintenance applications with equipment tracking, service requests, work orders, maintenance history, and fixed asset oversight from acquisition to depreciation.',
 		color: 'var(--color-taupe)',
 	},
 ];
@@ -47,7 +47,7 @@ const services = [
 
 <Layout title="Services — Portfolio" activeNav="SERVICES">
 	<!-- Hero -->
-	<section class="hero section-padding">
+	<section class="hero section-padding" data-aos="fade-up">
 		<span class="micro-label">SERVICES</span>
 		<h1 class="headline headline--page">
 			What I<br />Can Build<br />For You
@@ -63,8 +63,8 @@ const services = [
 	<!-- Services Grid -->
 	<section class="services section-padding">
 		<div class="services-grid">
-			{services.map((service) => (
-				<div class="service-card" style={`background: ${service.color}`}>
+			{services.map((service, i) => (
+				<div class="service-card card-hover" style={`background: ${service.color}`} data-aos="fade-up" data-aos-delay={i * 100}>
 					<span class="service-number">{service.number}</span>
 					<div class="service-content">
 						<h3 class="headline headline--card service-title">{service.title}</h3>
@@ -117,6 +117,7 @@ const services = [
 		flex-direction: column;
 		gap: 24px;
 		position: relative;
+		overflow: hidden;
 	}
 
 	.service-number {
@@ -125,6 +126,11 @@ const services = [
 		font-weight: 200;
 		color: rgba(255, 255, 255, 0.2);
 		line-height: 1;
+		transition: color 0.3s ease;
+	}
+
+	.service-card:hover .service-number {
+		color: rgba(255, 255, 255, 0.45);
 	}
 
 	.service-content {
@@ -166,6 +172,10 @@ const services = [
 	.service-cta {
 		color: #fff;
 		margin-top: 8px;
+	}
+
+	.service-cta::after {
+		background: #fff;
 	}
 
 	/* ── Responsive ── */

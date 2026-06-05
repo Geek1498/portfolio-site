@@ -33,6 +33,9 @@ const {
 			rel="stylesheet"
 		/>
 
+		<!-- AOS (Animate On Scroll) -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
 		<title>{title}</title>
 	</head>
 	<body>
@@ -41,6 +44,18 @@ const {
 			<slot />
 		</main>
 		<Footer />
+
+		<script is:inline src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+		<script is:inline>
+			document.addEventListener('DOMContentLoaded', () => {
+				AOS.init({
+					duration: 600,
+					easing: 'ease-out-cubic',
+					once: true,
+					offset: 80,
+				});
+			});
+		</script>
 	</body>
 </html>
 
@@ -146,16 +161,54 @@ const {
 		font-size: 12px;
 		font-weight: 500;
 		letter-spacing: 1px;
-		text-decoration: underline;
+		text-decoration: none;
 		color: var(--color-text);
 		cursor: pointer;
 		background: none;
 		border: none;
 		text-transform: uppercase;
+		position: relative;
+		display: inline-block;
 	}
 
-	.cta-link:hover {
-		opacity: 0.7;
+	.cta-link::after {
+		content: '';
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		width: 0;
+		height: 1px;
+		background: currentColor;
+		transition: width 0.3s ease;
+	}
+
+	.cta-link:hover::after {
+		width: 100%;
+	}
+
+	/* ── Card hover utility ── */
+	.card-hover {
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.card-hover:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+	}
+
+	/* ── Reduced motion ── */
+	@media (prefers-reduced-motion: reduce) {
+		*,
+		*::before,
+		*::after {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.01ms !important;
+		}
+
+		.card-hover:hover {
+			transform: none;
+		}
 	}
 
 	.divider {

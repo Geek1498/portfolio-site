@@ -3,34 +3,34 @@ import Layout from '../layouts/Layout.astro';
 
 const projects = [
 	{
-		id: 'ai-trading-journal',
-		title: 'AI Trading Journal',
-		subtitle: 'Machine Learning · Trading Analytics · Automation',
-		problem: 'Manual trading journals are inconsistent, lack pattern recognition, and provide no predictive insights. Traders lose valuable data points that could improve performance.',
-		solution: 'An AI-powered journaling system that automatically captures trade data, identifies patterns using machine learning, and provides actionable analytics to improve trading decisions.',
+		id: 'plant-maintenance-management-system',
+		title: 'Plant Maintenance Management System',
+		subtitle: 'Industrial Operations · Maintenance Planning · Fixed Assets',
+		problem: 'Industrial teams often manage plant equipment, maintenance schedules, and fixed asset records across disconnected tools, which creates delays, weak traceability, and poor visibility into asset performance.',
+		solution: 'A centralized maintenance and fixed asset platform that helps teams manage plants and equipment, convert service needs into work orders, track execution through completion, and monitor asset activity from acquisition to depreciation.',
 		architecture: [
-			{ label: 'Backend', value: 'Laravel REST API with WebSocket real-time updates' },
-			{ label: 'Frontend', value: 'Next.js dashboard with interactive charts' },
-			{ label: 'AI Layer', value: 'OpenAI integration for pattern analysis and NLP insights' },
-			{ label: 'Database', value: 'PostgreSQL with time-series optimizations' },
+			{ label: 'Backend', value: 'Laravel application with workflow-driven maintenance modules' },
+			{ label: 'Frontend', value: 'Operational dashboard for plants, work orders, and asset records' },
+			{ label: 'Workflows', value: 'Service requests, work order conversion, assignment, and completion tracking' },
+			{ label: 'Database', value: 'Centralized asset and maintenance history for lifecycle reporting' },
 		],
-		stack: ['Laravel', 'Next.js', 'OpenAI API', 'PostgreSQL', 'WebSockets', 'TailwindCSS'],
+		stack: ['Laravel', 'Livewire', 'MySQL', 'Asset Tracking', 'Work Orders', 'TailwindCSS'],
 		color: 'var(--color-caramel)',
 		featured: true,
 	},
 	{
-		id: 'sap-monitoring-tool',
-		title: 'SAP B1 Performance Monitoring',
-		subtitle: 'ERP Integration · Real-time Monitoring · Alerting',
-		problem: 'SAP Business One environments lack built-in performance monitoring, making it difficult to identify bottlenecks and prevent system degradation.',
-		solution: 'A custom monitoring dashboard that connects to SAP B1 Service Layer, tracks key performance metrics, and provides real-time alerting when thresholds are exceeded.',
+		id: 'legal-case-management-system',
+		title: 'Legal Case Management System',
+		subtitle: 'Law Firm Operations · Case Tracking · Secure Access',
+		problem: 'Law firms often manage cases, clients, documents, schedules, and billing across separate systems, which slows down daily work and limits visibility into team workload, revenue, and performance.',
+		solution: 'A role-based legal case management platform that centralizes case tracking, client records, document workflows, scheduling, billing, and reporting in one dashboard, with secure authentication and two-factor authentication support for legal teams.',
 		architecture: [
-			{ label: 'Backend', value: 'ASP.NET Core API with background service workers' },
-			{ label: 'Frontend', value: 'React dashboard with real-time WebSocket updates' },
-			{ label: 'Integration', value: 'SAP B1 Service Layer REST API' },
-			{ label: 'Database', value: 'SQL Server with monitoring data aggregation' },
+			{ label: 'Access', value: 'Role-based permissions with secure authentication and 2FA support' },
+			{ label: 'Operations', value: 'Unified dashboard for cases, clients, schedules, and daily legal workflows' },
+			{ label: 'Documents', value: 'Centralized document handling and case-related workflow tracking' },
+			{ label: 'Reporting', value: 'Billing, revenue, workload, and performance visibility in one system' },
 		],
-		stack: ['ASP.NET Core', 'React', 'SAP Service Layer', 'SQL Server', 'SignalR'],
+		stack: ['Role-Based Access', '2FA', 'Case Tracking', 'Document Workflows', 'Billing', 'Reporting'],
 		color: 'var(--color-taupe)',
 		featured: false,
 	},
@@ -51,18 +51,18 @@ const projects = [
 		featured: false,
 	},
 	{
-		id: 'whatsapp-chatbot',
-		title: 'WhatsApp Chatbot Integration',
-		subtitle: 'Conversational AI · Business API · Automation',
-		problem: 'Businesses struggle to provide instant customer support at scale while maintaining personalized communication through messaging platforms.',
-		solution: 'An intelligent WhatsApp chatbot that handles customer inquiries, automates order processing, and escalates complex issues to human agents seamlessly.',
+		id: 'procurement-purchase-to-pay-platform',
+		title: 'Procurement & Purchase-to-Pay Platform',
+		subtitle: 'Procurement Operations · Approvals · Auditability',
+		problem: 'Businesses relying on spreadsheets and email for purchasing struggle with slow approvals, poor traceability, fragmented coordination, and limited visibility across procurement, logistics, and finance.',
+		solution: 'A role-based procurement and purchase-to-pay platform that manages the full lifecycle from purchase requests and multi-level approvals to purchase orders, goods receipt, border-clearance tracking, invoice processing, and finance settlement in a single auditable workflow.',
 		architecture: [
-			{ label: 'Backend', value: 'Laravel with queue-based message processing' },
-			{ label: 'Integration', value: 'WhatsApp Business API with webhook handlers' },
-			{ label: 'AI Layer', value: 'NLP for intent classification and response generation' },
-			{ label: 'Database', value: 'MySQL with conversation state management' },
+			{ label: 'Backend', value: 'Laravel services managing requisitions, approvals, orders, receipts, and settlement workflows' },
+			{ label: 'Frontend', value: 'Inertia and React dashboards for procurement, logistics, finance, and admin teams' },
+			{ label: 'Governance', value: 'Policy-based access control, master data management, and end-to-end audit logging' },
+			{ label: 'Operations', value: 'Imported shipment tracking, invoice processing, and cross-functional workflow visibility' },
 		],
-		stack: ['Laravel', 'WhatsApp Business API', 'OpenAI', 'MySQL', 'Redis', 'Queues'],
+		stack: ['Laravel', 'Inertia', 'React', 'Policy-Based Access', 'Audit Logging', 'P2P Workflows'],
 		color: 'var(--color-caramel)',
 		featured: false,
 	},
@@ -71,7 +71,7 @@ const projects = [
 
 <Layout title="Projects — Portfolio" activeNav="PROJECTS">
 	<!-- Hero -->
-	<section class="hero section-padding">
+	<section class="hero section-padding" data-aos="fade-up">
 		<span class="micro-label">PROJECTS</span>
 		<h1 class="headline headline--page">
 			Systems I've<br />Built
@@ -93,17 +93,17 @@ const projects = [
 			</div>
 
 			<div class="problem-solution">
-				<div class="ps-card" style={`background: ${project.color}`}>
+				<div class="ps-card" style={`background: ${project.color}`} data-aos="fade-right">
 					<span class="ps-label">PROBLEM</span>
 					<p class="ps-text">{project.problem}</p>
 				</div>
-				<div class="ps-card ps-card--light">
+				<div class="ps-card ps-card--light" data-aos="fade-left">
 					<span class="ps-label ps-label--dark">SOLUTION</span>
 					<p class="ps-text ps-text--dark">{project.solution}</p>
 				</div>
 			</div>
 
-			<div class="architecture-grid">
+			<div class="architecture-grid" data-aos="fade-up">
 				{project.architecture.map((item) => (
 					<div class="arch-item">
 						<span class="arch-label">{item.label}</span>
@@ -112,11 +112,7 @@ const projects = [
 				))}
 			</div>
 
-			<div class="project-screenshot">
-				<span class="screenshot-placeholder">PROJECT SCREENSHOT</span>
-			</div>
-
-			<div class="stack-row">
+			<div class="stack-row" data-aos="fade-up">
 				{project.stack.map((tech) => (
 					<span class="stack-tag">{tech}</span>
 				))}
@@ -131,7 +127,7 @@ const projects = [
 		<span class="micro-label">MORE PROJECTS</span>
 		<div class="projects-list">
 			{projects.filter(p => !p.featured).map((project, i) => (
-				<div class:list={['project-row', { 'project-row--reverse': i % 2 !== 0 }]}>
+				<div class:list={['project-row', { 'project-row--reverse': i % 2 !== 0 }]} data-aos="fade-up" data-aos-delay={i * 100}>
 					<div class="project-row__image" style={`background: ${project.color}`}>
 						<span class="screenshot-placeholder">{project.title.toUpperCase()}</span>
 					</div>
@@ -228,6 +224,11 @@ const projects = [
 		display: flex;
 		flex-direction: column;
 		gap: 8px;
+		transition: background 0.2s ease;
+	}
+
+	.arch-item:hover {
+		background: var(--color-surface);
 	}
 
 	.arch-item:last-child {
@@ -248,15 +249,6 @@ const projects = [
 		font-size: 13px;
 		color: var(--color-secondary);
 		line-height: 1.5;
-	}
-
-	/* Screenshot placeholder */
-	.project-screenshot {
-		background: var(--color-surface);
-		height: 320px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 	}
 
 	.screenshot-placeholder {
@@ -282,6 +274,12 @@ const projects = [
 		padding: 6px 14px;
 		background: var(--color-text);
 		color: #fff;
+		transition: transform 0.2s ease, background 0.2s ease;
+	}
+
+	.stack-tag:hover {
+		transform: translateY(-2px);
+		background: var(--color-sienna);
 	}
 
 	/* ── Other Projects ── */
@@ -302,6 +300,11 @@ const projects = [
 		grid-template-columns: 1fr 1fr;
 		gap: 0;
 		border-bottom: 1px solid var(--color-divider);
+		transition: background 0.3s ease;
+	}
+
+	.project-row:hover {
+		background: var(--color-surface);
 	}
 
 	.project-row:last-child {
@@ -333,6 +336,11 @@ const projects = [
 		gap: 16px;
 		padding: 40px;
 		justify-content: center;
+		transition: transform 0.3s ease;
+	}
+
+	.project-row:hover .project-row__content {
+		transform: translateX(8px);
 	}
 
 	.project-row__desc {

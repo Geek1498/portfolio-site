@@ -8,8 +8,8 @@ const focusAreas = [
 		color: 'var(--color-caramel)',
 	},
 	{
-		title: 'AI-Assisted Workflows',
-		description: 'Integrating machine learning and NLP into practical business tools — from trading analytics to intelligent chatbots.',
+		title: 'Operational Workflow Systems',
+		description: 'Designing role-based business platforms that coordinate approvals, auditability, and cross-functional execution across procurement and operations.',
 		color: 'var(--color-taupe)',
 	},
 	{
@@ -30,7 +30,7 @@ const philosophy = [
 <Layout title="About — Portfolio" activeNav="ABOUT">
 	<!-- Hero -->
 	<section class="hero section-padding">
-		<div class="hero-content">
+		<div class="hero-content" data-aos="fade-right">
 			<span class="micro-label">ABOUT</span>
 			<h1 class="headline headline--page">
 				Systems-Focused<br />Developer
@@ -41,8 +41,13 @@ const philosophy = [
 				technology — creating systems that actually move operations forward.
 			</p>
 		</div>
-		<div class="hero-photo">
-			<span class="photo-placeholder">PHOTO</span>
+		<div class="hero-photo" data-aos="fade-left">
+			<img
+				src={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}profile.jpg`}
+				alt="Profile portrait"
+				class="hero-photo__image"
+				loading="eager"
+			/>
 		</div>
 	</section>
 
@@ -52,8 +57,8 @@ const philosophy = [
 	<section class="focus section-padding">
 		<span class="micro-label">WHAT I FOCUS ON</span>
 		<div class="focus-grid">
-			{focusAreas.map((area) => (
-				<div class="focus-card" style={`background: ${area.color}`}>
+			{focusAreas.map((area, i) => (
+				<div class="focus-card card-hover" style={`background: ${area.color}`} data-aos="fade-up" data-aos-delay={i * 100}>
 					<h3 class="headline headline--card focus-card__title">{area.title}</h3>
 					<p class="focus-card__desc">{area.description}</p>
 				</div>
@@ -67,8 +72,8 @@ const philosophy = [
 	<section class="philosophy section-padding">
 		<span class="micro-label">DEVELOPMENT PHILOSOPHY</span>
 		<div class="philosophy-grid">
-			{philosophy.map((item) => (
-				<div class="philosophy-col">
+			{philosophy.map((item, i) => (
+				<div class="philosophy-col" data-aos="fade-up" data-aos-delay={i * 100}>
 					<h3 class="philosophy-title">{item.title}</h3>
 					<p class="philosophy-desc">{item.description}</p>
 				</div>
@@ -93,20 +98,14 @@ const philosophy = [
 	}
 
 	.hero-photo {
-		background: var(--color-surface);
-		aspect-ratio: 3 / 4;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		max-height: 500px;
+		width: min(100%, 375px);
+		justify-self: end;
 	}
 
-	.photo-placeholder {
-		font-family: var(--font-mono);
-		font-size: 14px;
-		font-weight: 200;
-		letter-spacing: 3px;
-		color: var(--color-tertiary);
+	.hero-photo__image {
+		width: 100%;
+		height: auto;
+		display: block;
 	}
 
 	/* ── Focus Areas ── */
@@ -127,6 +126,7 @@ const philosophy = [
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
+		overflow: hidden;
 	}
 
 	.focus-card__title {
@@ -197,6 +197,10 @@ const philosophy = [
 		.hero {
 			grid-template-columns: 1fr;
 			gap: 40px;
+		}
+
+		.hero-photo {
+			justify-self: center;
 		}
 
 		.focus-grid {

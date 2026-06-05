@@ -6,7 +6,7 @@ import Layout from '../layouts/Layout.astro';
 	<section class="contact section-padding">
 		<div class="contact-grid">
 			<!-- Left: Info -->
-			<div class="contact-info">
+			<div class="contact-info" data-aos="fade-right">
 				<span class="micro-label">CONTACT</span>
 				<h1 class="headline headline--page">
 					Let's Build<br />Something<br />Together
@@ -34,7 +34,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 
 			<!-- Right: Form -->
-			<div class="contact-form-wrapper">
+			<div class="contact-form-wrapper" data-aos="fade-left">
 				<form class="contact-form" action="#" method="POST">
 					<div class="form-row">
 						<div class="form-group">
@@ -165,13 +165,14 @@ import Layout from '../layouts/Layout.astro';
 		background: #fff;
 		color: var(--color-text);
 		outline: none;
-		transition: border-color 0.2s;
+		transition: border-color 0.3s ease, box-shadow 0.3s ease;
 		-webkit-appearance: none;
 		border-radius: 0;
 	}
 
 	.form-input:focus {
-		border-color: var(--color-text);
+		border-color: var(--color-caramel);
+		box-shadow: 0 0 0 3px rgba(194, 149, 106, 0.15);
 	}
 
 	.form-textarea {
@@ -189,12 +190,17 @@ import Layout from '../layouts/Layout.astro';
 		color: #fff;
 		border: none;
 		cursor: pointer;
-		transition: opacity 0.2s;
+		transition: background 0.3s ease, transform 0.2s ease;
 		align-self: flex-start;
 	}
 
 	.submit-btn:hover {
-		opacity: 0.85;
+		background: var(--color-sienna);
+		transform: translateY(-2px);
+	}
+
+	.submit-btn:active {
+		transform: translateY(0);
 	}
 
 	/* ── Responsive ── */
